@@ -1,18 +1,4 @@
 <!DOCTYPE html>
-<?php
-    include './includes/db.php';
-    if ($connection) {
-    echo "<h1>success</h1>";
-    }else {
-    echo "<h1>failed</h1>";
-    }
-    if (isset($_POST['submit'])){
-        echo $_POST['email'];
-        echo $_POST['password'];
-    }else {
-        print_r($_POST);
-    }
-?>
 
 <html>
   <head>
@@ -52,7 +38,7 @@
                         </a>
                     </li> -->
                     <li>
-                    	<a class="item-link close-panel" href="profile.html">
+                    	<a class="item-link close-panel" href="profile.php">
                     		<div class="item-inner">
                     			<div class="item-title">Profile</div>
                    			</div>
@@ -95,7 +81,7 @@
                         <div class="clearfix-20"></div>
                         <div class="text-yellow"></div>
 						<div class="slide-content-bottom">
-                        <a class="button button-big button-block color-yellow" href="signin.html">Login</a>
+                        <a class="button button-big button-block color-yellow" href="signin.php">Login</a>
                         <div class="clearfix-10"></div>
                      	<a class="button button-big button-block color-yellow" href="test.html">Apply</a>
                         <div class="clearfix-10"></div>
@@ -108,7 +94,7 @@
                         <div class="clearfix-20"></div>
                         <div class="text-yellow"></div>
 						<div class="slide-content-bottom">
-                        <a class="button button-big button-block color-yellow" href="signin.html">Login</a>
+                        <a class="button button-big button-block color-yellow" href="signin.php">Login</a>
                         <div class="clearfix-10"></div>
                      	<a class="button button-big button-block color-yellow" href="test.html">Apply</a>
                         <div class="clearfix-10"></div>

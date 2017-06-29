@@ -12,6 +12,17 @@
         </div>
     <!-- Scrollable page content-->
     <div class="page-content">
+        <?php
+        include './includes/db.php';
+        $query = "select * from inverstor";
+        $query_result = mysqli_query($connection, $query);
+        if (!$query_result) {
+                die("QUERY FAILED " . mysqli_error($connection));
+            }
+        $row = mysqli_fetch_assoc($query_result);
+        
+        ?>
+        
         <div class="content-block font-13">
         
         <div class="page-title">
@@ -24,7 +35,7 @@
                   <div class="item-inner">
                     <div class="item-title label">Name</div>
                     <div class="item-input">
-                      <input type="text" name="name" placeholder="Hemant Kumar">
+                      <input style="color: yellow" type="text" name="name" value="<?php echo $row['name']?>">
                     </div>
                   </div>
                 </li>

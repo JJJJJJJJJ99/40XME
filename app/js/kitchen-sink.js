@@ -19,12 +19,18 @@ var mySwiper1 = myApp.swiper('.new-startups-slider', {
   spaceBetween: 50
 });
 $$(document).on('ajaxStart', function(e) {
+    console.log('ajaxstart');
+    console.log(e);
+    var data = e.detail;
+    console.log(data);
+    
     if (e.detail.xhr.requestUrl.indexOf('autocomplete-languages.json') >= 0) {
         return;
     }
     myApp.showIndicator();
 });
 $$(document).on('ajaxComplete', function(e) {
+    console.log('ajaxComplete');
     if (e.detail.xhr.requestUrl.indexOf('autocomplete-languages.json') >= 0) {
         return;
     }

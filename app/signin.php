@@ -1,19 +1,6 @@
 
 <!-- We don't need full layout here, because this page will be parsed with Ajax-->
-<?php
-    include './includes/db.php';
-    if ($connection) {
-    echo "<h1>success</h1>";
-    }else {
-    echo "<h1>failed</h1>";
-    }
-    if (isset($_POST['submit'])){
-        echo $_POST['email'];
-        echo $_POST['password'];
-    }else {
-        print_r($_POST);
-    }
-?>
+
 
 <div class="pages">
   <!-- Page, data-page contains page name-->
@@ -28,18 +15,17 @@
     <!-- Scrollable page content-->
     <div class="page-content">
 		<div class="content-block">
-        
         <div class="page-title">
         	<strong>Log In</strong>
         </div>
-            <form method='post' action="index.php" class="ajax-submit">
+            <form method='get' action="" class="ajax-submit">
             <div class="list-block form-list-block">
               <ul>
                 <li class="item-content">
                   <div class="item-inner">
                     <div class="item-title label">User Name</div>
                     <div class="item-input">
-                      <input type="email" name="email" placeholder="Enter User ID">
+                      <input  style="color: yellow" type="email" name="email" placeholder="Enter User ID">
                     </div>
                   </div>
                 </li>
@@ -47,7 +33,7 @@
                   <div class="item-inner">
                     <div class="item-title label">Password</div>
                     <div class="item-input">
-                      <input type="password" name="password" placeholder="Enter Password">
+                      <input style="color: yellow" type="password" name="password" placeholder="Enter Password">
                     </div>
                   </div>
                 </li>
@@ -62,7 +48,7 @@
                 </li>
               </ul>
               <div class="clearfix-10"></div>
-                <a class="button button-big button-fill button-block color-yellow" href='home.php'> Submit </a>
+                <a class="button button-big button-fill button-block color-yellow" href='home.php'> <input type="submit" name="submit" value="Submit"> </a>
             </div>
           </form>
               <div class="text-center">
