@@ -1,0 +1,78 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<?php
+    include './includes/db.php';
+    if ($connection) {
+    echo "<h1>success</h1>";
+    }else {
+    echo "<h1>failed</h1>";
+    }
+    if (isset($_POST['submit'])){
+        echo $_POST['email'];
+        echo $_POST['password'];
+    }else {
+        print_r($_POST);
+    }
+?>
+
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="signin" class="page">
+  	<!-- Top Navbar-->
+    <div class="navbar">
+        <div class="navbar-inner">
+        <div class="left"><a class="link back" href="#"><span class="icon-back"></span><span>Back</span></a></div>
+        <div class="right"><a href="index.php" class="link"><img src="img/logo.png" alt="" height="42" width="42"></a></div>
+        </div>
+        </div>
+    <!-- Scrollable page content-->
+    <div class="page-content">
+		<div class="content-block">
+        
+        <div class="page-title">
+        	<strong>Log In</strong>
+        </div>
+            <form method='post' action="index.php" class="ajax-submit">
+            <div class="list-block form-list-block">
+              <ul>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">User Name</div>
+                    <div class="item-input">
+                      <input type="email" name="email" placeholder="Enter User ID">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Password</div>
+                    <div class="item-input">
+                      <input type="password" name="password" placeholder="Enter Password">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content">
+                   <label class="label-checkbox item-content">
+                    <input type="checkbox" value="remember" name="my-checkbox">
+                    <div class="item-media">
+                      <i class="icon icon-form-checkbox"></i>
+                    </div>
+                      Remember Me
+                  </label>
+                </li>
+              </ul>
+              <div class="clearfix-10"></div>
+                <a class="button button-big button-fill button-block color-yellow" href='home.php'> Submit </a>
+            </div>
+          </form>
+              <div class="text-center">
+                  
+            	Don’t have an account? <a href="test.html"><span class="icon-edit"></span>  Apply</a>
+            	<div class="clearfix-10"></div>
+            	<a href="forgot-password.html"><span class="icon-question"></span>  Forgot password? </a>
+            </div>
+            </div>
+        </div>
+		</div>
+  </div>
+</div>
