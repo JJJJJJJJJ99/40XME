@@ -27,7 +27,7 @@
             <div class="list-block">
                 <ul>
                     <li>
-                        <a class="item-link close-panel" href="home.php">
+                        <a class="item-link close-panel" href="#home">
                             <div class="item-inner">
                                 <div class="item-title color-black">Home</div>
                             </div>
@@ -174,7 +174,7 @@
                             <div class="left">
                                 <a class="link icon-only open-panel" href="#"> <span class="icon-menu"></span></a>
                             </div>
-                            <div class="center"><span class="text-yellow">We-Invest LLC</span></div>
+                            <div class="center"><span class="text-yellow user-name">We-Invest LL</span></div>
                             <div class="right">
                                 <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
                             </div>
@@ -188,7 +188,7 @@
                                 <div class="col-50">
                                     <a class="button button-small button-block color-yellow" href="#">
                                         <div class="row"><span class="text-yellow">Balance</span>
-                                            <span class="text-yellow"><span class="icon-dollar-symbol">45,213</span></span>
+                                            <span class="text-yellow"><span class="icon-dollar-symbol"></span><span style="margin-left: 0px" class="balance-count">45,213</span></span>
                                         </div>
                                     </a>
                                 </div>
@@ -203,7 +203,7 @@
                                                 <span>
                                 <img src="img/logo04.png" alt="" align="middle">
                                 <div class="clearfix"></div>
-                                <a class="button button-small button-fill button-center color-yellow" href="company.html">View Details</a>
+                                <a class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
                             </span>
                                             </div>
                                         </li>
@@ -212,7 +212,7 @@
                                                 <span>
                             <img src="img/logo02.png" alt="" align="middle">
                             <div class="clearfix"></div>
-                            <a class="button button-small button-fill button-center color-yellow" href="company.html">View Details</a>
+                            <a class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
                   	</span>
                                             </div>
                                         </li>
@@ -221,7 +221,7 @@
                                                 <span>
                             <img src="img/logo03.png" alt="" align="middle">
                             <div class="clearfix"></div>
-                            <a class="button button-small button-fill button-center color-yellow" href="company.html">View Details</a>
+                            <a class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
                   	</span>
                                             </div>
                                         </li>
@@ -240,7 +240,7 @@
                             <div class="left">
                                 <a class="link icon-only open-panel" href="#"> <span class="icon-menu"></span></a>
                             </div>
-                            <div class="center"><span class="text-yellow">We-Invest LLC</span></div>
+                            <div class="center"><span class="text-yellow user-name">We-Invest LL</span></div>
                             <div class="right">
                                 <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
                             </div>
@@ -262,8 +262,8 @@
                         </div>
                         <div class="clearfix-10">
                             <div class="row">
-                                <div class="col-50"><a class="button button-small button-block color-yellow" href="bid-company.html">Bid Now: <span class="text-yellow"><span class="icon-dollar-symbol"></span>124</span></a></div>
-                                <div class="col-50"><a class="button button-small button-block color-yellow" href="buy-company.html">Buy Now: <span class="text-yellow"><span class="icon-dollar-symbol"></span>230</span></a></div>
+                                <div class="col-50"><a class="button button-small button-block color-yellow" href="#company_bid">Bid Now: <span class="text-yellow"><span class="icon-dollar-symbol"></span>124</span></a></div>
+                                <div class="col-50"><a class="button button-small button-block color-yellow" href="company_buy">Buy Now: <span class="text-yellow"><span class="icon-dollar-symbol"></span>230</span></a></div>
                             </div>
                             <div class="clearfix-20"></div>
                             <div class="row">
@@ -306,7 +306,7 @@
                             </div>
                             <div class="clearfix-30"></div>
 
-                            <div class="col-33"><a class="button button-small button-middle color-yellow" href="home.php">Back to List</a></div>
+                            <div class="col-33"><a class="button button-small button-middle color-yellow" href="#home">Back to List</a></div>
 
                         </div>
                     </div>
@@ -327,7 +327,7 @@
                         <div class="content-block">
 
                             <div class="page-title">
-                                <strong>We-Invest LLC:</strong> <br> You are bidding 1,000,000 shares at $124 per share in LMN Corp.<br>
+                                <strong class="user-name">We-Invest LLC</strong> <br> You are bidding 1,000,000 shares at $124 per share in LMN Corp.<br>
 
                                 <div class="left"><b>Change Bid: $125</b><br>
 
@@ -358,7 +358,7 @@
                         <div class="content-block">
 
                             <div class="page-title">
-                                <strong>We-Invest LLC:</strong> <br> You are bidding 5,000,000 shares at<br> $100 per share in LMN Corp.<br>
+                                <strong class="user-name">We-Invest LLC</strong> <br> You are bidding 5,000,000 shares at<br> $100 per share in LMN Corp.<br>
                                 <br>
 
                                 <div class="left">Closes on Mar 31, 2017<br></div><br>

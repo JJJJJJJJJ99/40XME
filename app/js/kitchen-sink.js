@@ -11,7 +11,7 @@ var $$ = Dom7;
 // Add main view
 var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
-    dynamicNavbar: true,
+    dynamicNavbar: false,
     domCache: true
 });
 // 1 Slide Per View, 50px Between
@@ -66,6 +66,8 @@ var loginCallBack = function(e){
     if (e.status == 'success') {
         console.log("validation");
         mainView.router.load({pageName: 'home'});
+        $$('.user-name').text('text-user-name');
+        $$('.balance-count').text('123323');
     }else {
         alert("wrong password or invalid username");
     }
