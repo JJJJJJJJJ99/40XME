@@ -1,9 +1,6 @@
 <?php 
 $connection=mysqli_connect('50.62.177.142','jjtest','jj@test','xme'); 
-?>
-// Check connection
 
-<?php
 if (isset($_POST['username'])&&isset($_POST['password'])){
     $investname = $_POST['username'];
     $investpass = $_POST['password'];

@@ -25,7 +25,7 @@
                   <div class="item-inner">
                     <div class="item-title label jj-yellow">User Name</div>
                     <div class="item-input">
-                      <input  style="color: yellow" type="email" name="email" placeholder="Enter User ID">
+                      <input  style="color: yellow" type="email" name="username" placeholder="Enter User ID">
                     </div>
                   </div>
                 </li>
