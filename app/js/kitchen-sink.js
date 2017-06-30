@@ -21,9 +21,6 @@ var mySwiper1 = myApp.swiper('.new-startups-slider', {
 });
 $$(document).on('ajaxStart', function(e) {
     console.log('ajaxstart');
-    console.log(e);
-    var data = e.detail;
-    console.log(data);
     
     if (e.detail.xhr.requestUrl.indexOf('autocomplete-languages.json') >= 0) {
         return;
@@ -55,10 +52,15 @@ $$('#login-btn').on('click', function(){
         method: 'POST',
         data: data,
         dataType: 'json',
+        error: loginError,
         success: loginCallBack,
         cache: false  
     })
 })
+
+var loginError = function(){
+    console.log('tees');
+}
 
 var loginCallBack = function(e){
     console.log("loginCallback");
