@@ -22,8 +22,6 @@
     <div class="panel-overlay"></div>
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
-            <!--<span class="icon-user"></span><br>
-              <strong>WeInvest LLC</strong> -->
             <div class="list-block">
                 <ul>
                     <li>
@@ -33,13 +31,6 @@
                             </div>
                         </a>
                     </li>
-                    <!--<li>
-                    	<a class="item-link close-panel" href="home.html">
-                    		<div class="item-inner">
-                    			<div class="item-title">Manage Funds</div>
-                   			</div>
-                        </a>
-                    </li> -->
                     <li>
                         <a class="item-link close-panel" href="profile.php">
                             <div class="item-inner">
@@ -54,13 +45,6 @@
                             </div>
                         </a>
                     </li>
-                    <!--<li>
-                    	<a class="item-link close-panel" href="home.html">
-                    		<div class="item-inner">
-                    			<div class="item-title">Billing</div>
-                   			</div>
-                        </a>
-                    </li> -->
                 </ul>
             </div>
             <p> <a href="index.php" class="button close-panel color-black button-border">Logout</a></p>
@@ -257,13 +241,21 @@
                 </span>
                                 </center>
                             </div>
-                            <!--<strong>LMN Corp</strong>
-            LMN Corp is a US based company with office all around the world. -->
                         </div>
+                    <div class="content-block">
+                        <center>
+                            <span class="text-yellow">
+                                (unit) shares at (amount/unit)
+                            </span>
+                            <span class="text-yellow">
+                                Sum: (Amount)
+                            </span>
+                        </center>
+                    </div>
                         <div class="clearfix-10">
                             <div class="row">
-                                <div class="col-50"><a class="button button-small button-block color-yellow" href="#company_bid">Bid Now: <span class="text-yellow"><span class="icon-dollar-symbol"></span>124</span></a></div>
-                                <div class="col-50"><a class="button button-small button-block color-yellow" href="company_buy">Buy Now: <span class="text-yellow"><span class="icon-dollar-symbol"></span>230</span></a></div>
+                                <div class="col-50"></div>
+                                <div class="col-50"><a class="button button-small button-block color-yellow" href="company_buy">Place Bid: <span class="text-yellow"><span></span>(unit) units</span></a></div>
                             </div>
                             <div class="clearfix-20"></div>
                             <div class="row">
@@ -298,11 +290,7 @@
                                         <span class="link-box-icon icon-question"></span> Ask a question
                                     </a>
                                 </div>
-                                <div class="col-50">
-                                    <a href="company-discussion-board.html" class="link-box link">
-                                        <span class="link-box-icon icon-assess"></span> Discussion Board
-                                    </a>
-                                </div>
+                                <div class="col-50"></div>
                             </div>
                             <div class="clearfix-30"></div>
 

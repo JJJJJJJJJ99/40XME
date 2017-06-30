@@ -68,8 +68,8 @@ var loginCallBack = function(e){
     if (e.status == 'success') {
         console.log("validation");
         mainView.router.load({pageName: 'home'});
-        $$('.user-name').text('text-user-name');
-        $$('.balance-count').text('123323');
+        $$('.user-name').text('Testname');
+        $$('.balance-count').text('345');
     }else {
         alert("wrong password or invalid username");
     }
