@@ -5,7 +5,7 @@
   <div data-page="profile" class="page">
   	<!-- Top Navbar-->
     <div class="navbar">
-        <div class="navbar-inner">
+        <div class="theme-black navbar-inner">
         <div class="left"><a class="link back" href="#"><span class="icon-back"></span><span>Back</span></a></div>
         <div class="right"><a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt=""></a></div>
         </div>

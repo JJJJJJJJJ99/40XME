@@ -98,7 +98,7 @@ body {
   font-family: 'exoregular', Noto, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #ddc23e;
+  color: #ffc92f;
   font-size: 14px;
   line-height: 1.5;
   width: 100%;
@@ -1958,7 +1958,7 @@ i.icon.icon-f7 {
 i.icon.icon-key {
   width: 24px;
   height: 24px;
-  background: #ddc23e;
+  background: #ffc92f;
   color:#fff;
   border-radius: 3px;
   text-align:center;
@@ -2041,7 +2041,7 @@ i.icon.icon-close {
   font-size: 10px;
   display: inline-block;
   color: #fff;
-  background: #ddc23e;
+  background: #ffc92f;
   border-radius: 50%;
   padding: 1px 6px;
   box-sizing: border-box;
@@ -2943,7 +2943,7 @@ html.pixel-ratio-3 .list-block li:last-child li .item-inner:after {
 .list-block .label,
 .list-block .floating-label {
   vertical-align: top;
-  color: #ddc23e;
+  color: #ffc92f;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
   width: 35%;
@@ -5684,7 +5684,7 @@ html.with-statusbar-overlay body > .progressbar {
     background-color: #2196f3;
   }
   75% {
-    background-color: #ddc23e;
+    background-color: #ffc92f;
   }
 }
 @keyframes progressbar-infinite-multicolor-bg {
@@ -5698,7 +5698,7 @@ html.with-statusbar-overlay body > .progressbar {
     background-color: #2196f3;
   }
   75% {
-    background-color: #ddc23e;
+    background-color: #ffc92f;
   }
 }
 @-webkit-keyframes progressbar-infinite-multicolor-fill {
@@ -5720,11 +5720,11 @@ html.with-statusbar-overlay body > .progressbar {
   }
   50% {
     -webkit-transform: scaleX(0);
-    background-color: #ddc23e;
+    background-color: #ffc92f;
   }
   74.9% {
     -webkit-transform: scaleX(1);
-    background-color: #ddc23e;
+    background-color: #ffc92f;
   }
   75% {
     -webkit-transform: scaleX(0);
@@ -5754,11 +5754,11 @@ html.with-statusbar-overlay body > .progressbar {
   }
   50% {
     transform: scaleX(0);
-    background-color: #ddc23e;
+    background-color: #ffc92f;
   }
   74.9% {
     transform: scaleX(1);
-    background-color: #ddc23e;
+    background-color: #ffc92f;
   }
   75% {
     transform: scaleX(0);
@@ -7284,7 +7284,7 @@ button{height:300px; position:center; margin: -50px -70px; width:100px; top:50%;
 }
 
 input[type="tel"] {
-  border: 1px solid #ddc23e;
+  border: 1px solid #ffc92f;
   padding: 4px 8px;
 }
 

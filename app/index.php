@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/framework7.material.colors.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/kitchen-sink.css">
+    <link rel="stylesheet" href="css/jjcss.css">
   </head>
   <body class="theme-yellow">
     <!-- Left panel -->
@@ -26,7 +27,7 @@
                     <li>
                     	<a class="item-link close-panel" href="home.php">
                     		<div class="item-inner">
-                    			<div class="item-title">Home</div>
+                    			<div class="item-title color-black">Home</div>
                    			</div>
                         </a>
                     </li>
@@ -40,18 +41,18 @@
                     <li>
                     	<a class="item-link close-panel" href="profile.php">
                     		<div class="item-inner">
-                    			<div class="item-title">Profile</div>
-                   			</div>
-                        </a>
-                    </li>
-                    <!--<li>
-                    	<a class="item-link close-panel" href="home.html">
-                    		<div class="item-inner">
-                    			<div class="item-title">Startups you've invested in</div>
+                    			<div class="item-title color-black">Account</div>
                    			</div>
                         </a>
                     </li>
                     <li>
+                    	<a class="item-link close-panel" href="about-startup-moola.html">
+                    		<div class="item-inner">
+                    			<div class="item-title color-black">About</div>
+                   			</div>
+                        </a>
+                    </li>
+                    <!--<li>
                     	<a class="item-link close-panel" href="home.html">
                     		<div class="item-inner">
                     			<div class="item-title">Billing</div>
@@ -60,7 +61,7 @@
                     </li> -->
                     </ul>
 				</div>
-                <p> <a href="index.php" class="button close-panel color-white button-border">Logout</a></p>
+                <p> <a href="index.php" class="button close-panel color-black button-border">Logout</a></p>
     	</div>
     </div>
     <!-- Views-->
@@ -118,9 +119,8 @@
                         <div class="content-block">
                         	<div class="clearfix-20"></div>
                             <a href="#" class="link close-popup icon-close-popup"><span class="icon-cancel"></span></a>
-                        	<a href="home.html" class="link close-popup"><img src="img/startup-moola-logo.png" alt="" ></a>
+                        	<a href="home.html" class="link close-popup"><img src="img/40xlogo.png" alt="" ></a>
                             <div class="clearfix-20"></div>
-                            <p><a href="about-startup-moola.html" class="button close-panel color-white button-border close-popup">About 40X.me</a></p>
                             <p><a href="terms-conditions.html" class="button close-panel color-white button-border close-popup">Terms &amp; Conditions</a></p>
                         </div>
                     </div>

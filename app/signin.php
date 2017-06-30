@@ -6,8 +6,8 @@
   <!-- Page, data-page contains page name-->
   <div data-page="signin" class="page">
   	<!-- Top Navbar-->
-    <div class="navbar">
-        <div class="navbar-inner">
+    <div class="theme-black navbar">
+        <div class="theme-black navbar-inner">
         <div class="left"><a class="link back" href="#"><span class="icon-back"></span><span>Back</span></a></div>
         <div class="right"><a href="index.php" class="link"><img src="img/logo.png" alt="" height="42" width="42"></a></div>
         </div>
@@ -23,7 +23,7 @@
               <ul>
                 <li class="item-content">
                   <div class="item-inner">
-                    <div class="item-title label">User Name</div>
+                    <div class="item-title label jj-yellow">User Name</div>
                     <div class="item-input">
                       <input  style="color: yellow" type="email" name="email" placeholder="Enter User ID">
                     </div>
@@ -31,7 +31,7 @@
                 </li>
                 <li class="item-content">
                   <div class="item-inner">
-                    <div class="item-title label">Password</div>
+                    <div class="item-title label jj-yellow">Password</div>
                     <div class="item-input">
                       <input style="color: yellow" type="password" name="password" placeholder="Enter Password">
                     </div>
@@ -41,14 +41,14 @@
                    <label class="label-checkbox item-content">
                     <input type="checkbox" value="remember" name="my-checkbox">
                     <div class="item-media">
-                      <i class="icon icon-form-checkbox"></i>
+                      <i class="icon icon-form-checkbox jj-yellow"></i>
                     </div>
                       Remember Me
                   </label>
                 </li>
               </ul>
               <div class="clearfix-10"></div>
-                <a class="button button-big button-fill button-block color-yellow" href='home.php'> <input type="submit" name="submit" value="Submit"> </a>
+                <a class="button button-big button-fill button-block jj-yellow" href='home.php'> <input type="submit" name="submit" value="Submit"> </a>
             </div>
           </form>
               <div class="text-center">
