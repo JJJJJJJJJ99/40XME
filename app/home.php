@@ -33,7 +33,7 @@
                     <li>
                         <div class="content-block">
                             <span>
-                                <img src="img/logo04.png" alt="" align="middle">
+                                <img src="img/company1.png" alt="" align="middle">
                                 <div class="clearfix"></div>
                                 <a class="button button-small button-fill button-center color-yellow" href="company.html">View Details</a>
                             </span>
@@ -42,7 +42,7 @@
                     <li>
                         <div class="content-block">
                             <span>
-                            <img src="img/logo02.png" alt="" align="middle">
+                            <img src="img/company2.png" alt="" align="middle">
                             <div class="clearfix"></div>
                             <a class="button button-small button-fill button-center color-yellow" href="company.html">View Details</a>
                   	</span>
@@ -51,7 +51,7 @@
                     <li>
                         <div class="content-block">
                             <span>
-                            <img src="img/logo03.png" alt="" align="middle">
+                            <img src="img/company3.png" alt="" align="middle">
                             <div class="clearfix"></div>
                             <a class="button button-small button-fill button-center color-yellow" href="company.html">View Details</a>
                   	</span>

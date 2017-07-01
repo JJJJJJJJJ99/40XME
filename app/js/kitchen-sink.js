@@ -14,7 +14,10 @@ var $$ = Dom7;
 var companyRelated = {
     "unit": $$('#company-unit'),
     "share": $$('#company-share'),
-    "amount": $$('#company-amount')
+    "amount": $$('#company-amount'),
+    "name": $$('#company-name'),
+    "about": $$('#company-about'),
+    "document": $$('#company-document')
 }
 
 var investorRelated = {
@@ -168,7 +171,8 @@ var companySuccessCallback = function(e){
     companyRelated.amount.text(e.amount);
     companyRelated.share.text(e.buypershare);
     companyRelated.unit.text(e.units);
-    
+    companyRelated.name.text(e.name);
+    companyRelated.about.attr('href', 'company-about-'+currentCompanyId + '.html');
 }
 var companyErrorCallback = function(e){
     console.log("Error: ", e);

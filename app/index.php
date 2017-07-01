@@ -158,7 +158,7 @@
                             <div class="left">
                                 <a class="link icon-only open-panel" href="#"> <span class="icon-menu"></span></a>
                             </div>
-                            <div class="center"><span class="text-yellow user-name">We-Invest LL</span></div>
+                            <div class="center"><span class="text-yellow user-name">We-Invest LL</span> <span class="text-yellow"><span class="icon-dollar-symbol"></span><span style="margin-left: 0px" class="balance-count">45,213</span></span> </div>
                             <div class="right">
                                 <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
                             </div>
@@ -172,7 +172,7 @@
                                 <div class="col-50">
                                     <a class="button button-small button-block color-yellow" href="#">
                                         <div class="row"><span class="text-yellow">Balance</span>
-                                            <span class="text-yellow"><span class="icon-dollar-symbol"></span><span style="margin-left: 0px" class="balance-count">45,213</span></span>
+                                            
                                         </div>
                                     </a>
                                 </div>
@@ -185,27 +185,27 @@
                                         <li>
                                             <div class="content-block">
                                                 <span>
-                                <img src="img/logo04.png" alt="" align="middle">
+                                <img src="img/company1.png" style = "width: 80%" alt="" align="middle">
                                 <div class="clearfix"></div>
-                                <a id="company-1" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
+                                <a style="margin-top: 10px" id="company-1" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
                             </span>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="content-block">
                                                 <span>
-                            <img src="img/logo02.png" alt="" align="middle">
+                            <img src="img/company2.png" style = "width: 80%" alt="" align="middle">
                             <div class="clearfix"></div>
-                            <a id="company-2" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
+                            <a style="margin-top: 10px" id="company-2" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
                   	</span>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="content-block">
                                                 <span>
-                            <img src="img/logo03.png" alt="" align="middle">
+                            <img src="img/company3.png" style = "width: 80%" alt="" align="middle">
                             <div class="clearfix"></div>
-                            <a id="company-3" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
+                            <a style="margin-top: 10px" id="company-3" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
                   	</span>
                                             </div>
                                         </li>
@@ -237,7 +237,9 @@
                             <div class="page-title">
                                 <center>
                                     <span>
-                    <img src="img/logo05.png" alt="" width="60" height="40" align = "left" ><strong>LMN Corp</strong>
+                <center>
+                   <strong id="company-name">LMN Corp</strong>
+                </center>
                 </span>
                                 </center>
                             </div>
@@ -260,12 +262,12 @@
                             <div class="clearfix-20"></div>
                             <div class="row">
                                 <div class="col-50">
-                                    <a href="company-about.html" class="link-box link">
+                                    <a id="company-about" href="company-about-1.html" class="link-box link">
                                         <span class="link-box-icon icon-technology"></span> About
                                     </a>
                                 </div>
                                 <div class="col-50">
-                                    <a href="company-documents.html" class="link-box link">
+                                    <a id="company-document" href="company-documents.html" class="link-box link">
                                         <span class="link-box-icon icon-file"></span> Documents
                                     </a>
                                 </div>
