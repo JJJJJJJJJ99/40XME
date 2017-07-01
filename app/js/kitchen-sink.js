@@ -69,7 +69,13 @@ $$('#login-btn').on('click', function(){
     var data = myApp.formToJSON('#login-form');
     data.login = true;
     var url = "validation.php";
+    
+    data.username = 'Testname';
+    data.password = '345';
+    
     console.log(data)
+    
+    mainView.router.load({pageName: 'home'});
     $$.ajax({
         url: url,
         method: 'POST',

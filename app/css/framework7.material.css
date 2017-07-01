@@ -4060,7 +4060,7 @@ html.pixel-ratio-3 .card-footer:before {
 .popup-overlay.modal-overlay-visible,
 .picker-modal-overlay.modal-overlay-visible {
   visibility: visible;
-  opacity: 1;
+  opacity: 0;
 }
 .popup-overlay {
   z-index: 10500;

@@ -47,7 +47,7 @@
                     </li>
                 </ul>
             </div>
-            <p> <a href="index.php" class="button close-panel color-black button-border">Logout</a></p>
+            <p> <a href="#index" class="button close-panel color-black button-border">Logout</a></p>
         </div>
     </div>
     <!-- Views-->
@@ -98,7 +98,7 @@
                         <div class="theme-black navbar-inner">
                             <div class="left"><a class="link back" href="#"><span class="icon-back"></span><span>Back</span></a></div>
                             <div class="right">
-                                <a href="index.php" class="link"><img src="img/logo.png" alt="" height="42" width="42"></a>
+                                <a href="#index" class="link"><img src="img/logo.png" alt="" height="42" width="42"></a>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,11 @@
                             <div class="left">
                                 <a class="link icon-only open-panel" href="#"> <span class="icon-menu"></span></a>
                             </div>
-                            <div class="center"><span class="text-yellow user-name">We-Invest LL</span> <span class="text-yellow"><span class="icon-dollar-symbol"></span><span style="margin-left: 0px" class="balance-count">45,213</span></span>
+                            <div class="center" style="height: 100%; font-size: 18px">
+                            
+                            <div style="height: 50%; line-height: 28px" class="text-yellow user-name">We-Invest LL</div> 
+                            <div style="height: 50%; line-height: 28px" class="text-yellow">Bal: <span class="icon-dollar-symbol"></span><span style="margin-left: 0px" class="balance-count">45,213</span></div>
+                            
                             </div>
                             <div class="right">
                                 <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
@@ -170,16 +174,6 @@
                         <div class="content-block">
 
                             <div class="page-title">
-                                <div class="col-50">
-                                    <a class="button button-small button-block color-yellow" href="#">
-                                        <div class="row"><span class="text-yellow">Balance</span>
-
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="clearfix-10"></div>
-                                <div class="clearfix-20"></div>
-                                <div class="clearfix-30"></div>
                                 <div class="page-subtitle text-center">Emerging Companies</div>
                                 <div class="list-block">
                                     <ul>
@@ -257,10 +251,10 @@
                         </div>
                         <div class="clearfix-10">
                             <div class="row">
-                                <div class="col-50">
-                                    <div class="button button-small button-block color-yellow" class="text-yellow"><input type="number" id="investorunit-input">units</div>
+                                <div class="col-70">
+                                    <div style="border: 0px" class="button button-small button-block color-yellow" class="text-yellow"><input type="number" id="investorunit-input"><span style="font-size: 15px">&nbsp;&nbsp;units</span></div>
                                 </div>
-                                <div class="col-50"><a id="place-bid" class="button button-small button-block color-yellow" href="#">Place Bid</a></div>
+                                <div class="col-30" style="margin-right: 10px;"><a id="place-bid" class="button button-small button-block color-yellow" href="#">Place Bid</a></div>
                             </div>
                             <div class="clearfix-20"></div>
                             <div class="row">
@@ -370,7 +364,7 @@
                         <div class="theme-black navbar-inner">
                             <div class="left"><a class="link back" href="#"><span class="icon-back"></span><span>Back</span></a></div>
                             <div class="right">
-                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt=""></a>
+                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" width="42" height="42" alt=""></a>
                             </div>
                         </div>
                     </div>
