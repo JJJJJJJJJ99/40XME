@@ -4,7 +4,7 @@ if (isset($_POST['username'])&&isset($_POST['password'])){
     $investname = $_POST['username'];
     $investpass = $_POST['password'];
 }else{
-    echo json_encode("Invalid username or passowrd.");
+    echo json_encode("Something wrong with database.");
 }
 
 $sql = "SELECT id, name, balance FROM investor where name = '{$investname}' and password = '{$investpass}'";
@@ -17,6 +17,7 @@ if (mysqli_num_rows($query_result) == 0) {
     echo json_encode("Invalid username or passowrd.");
 } else{
     $userinfo = mysqli_fetch_assoc($query_result);
+    $userinfo['status'] = 'success';
     echo json_encode($userinfo);
 }
 ?>

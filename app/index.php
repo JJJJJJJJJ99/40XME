@@ -115,7 +115,7 @@
                                             <div class="item-inner">
                                                 <div class="item-title label jj-yellow">User Name</div>
                                                 <div class="item-input">
-                                                    <input style="color: yellow" type="email" name="username" placeholder="Enter User ID">
+                                                    <input style="color: yellow" type="text" name="username" placeholder="Enter User ID">
                                                 </div>
                                             </div>
                                         </li>
@@ -187,7 +187,7 @@
                                                 <span>
                                 <img src="img/logo04.png" alt="" align="middle">
                                 <div class="clearfix"></div>
-                                <a class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
+                                <a id="company-1" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
                             </span>
                                             </div>
                                         </li>
@@ -196,7 +196,7 @@
                                                 <span>
                             <img src="img/logo02.png" alt="" align="middle">
                             <div class="clearfix"></div>
-                            <a class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
+                            <a id="company-2" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
                   	</span>
                                             </div>
                                         </li>
@@ -205,7 +205,7 @@
                                                 <span>
                             <img src="img/logo03.png" alt="" align="middle">
                             <div class="clearfix"></div>
-                            <a class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
+                            <a id="company-3" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
                   	</span>
                                             </div>
                                         </li>

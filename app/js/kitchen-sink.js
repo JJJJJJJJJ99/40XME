@@ -46,16 +46,16 @@ $$('#login-btn').on('click', function(){
     data.login = true;
     var url = "validation.php";
     console.log(data)
-    
-    $$.ajax({
-        url: url,
-        method: 'POST',
-        data: data,
-        dataType: 'json',
-        error: loginError,
-        success: loginCallBack,
-        cache: false  
-    })
+    mainView.router.load({pageName: 'home'});
+//    $$.ajax({
+//        url: url,
+//        method: 'POST',
+//        data: data,
+//        dataType: 'json',
+//        error: loginError,
+//        success: loginCallBack,
+//        cache: false  
+//    })
 })
 
 var loginError = function(){
@@ -65,6 +65,7 @@ var loginError = function(){
 var loginCallBack = function(e){
     console.log("loginCallback");
     console.log(e);
+    
     if (e.status == 'success') {
         console.log("validation");
         mainView.router.load({pageName: 'home'});
@@ -74,3 +75,28 @@ var loginCallBack = function(e){
         alert("wrong password or invalid username");
     }
 }
+
+
+$$('#company-1').on('click', function(e){
+    url = "";
+    $$.ajax({
+        url: url,
+        method: 'POST',
+        data: data,
+        dataType: 'json',
+        error: loginError,
+        success: loginCallBack,
+        cache: false  
+    })
+    
+})
+
+$$('#company-2').on('click', function(e){
+    
+})
+
+$$('#company-3').on('click', function(e){
+    
+})
+
+
