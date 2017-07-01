@@ -10,6 +10,11 @@ var $$ = Dom7;
 
 
 // get specific dom node
+var profileRelated = {
+    "name": $$('#profile-name'),
+    "email": $$('#profile-email'),
+    "address": $$('#profile-address') 
+}
 
 var companyRelated = {
     "unit": $$('#company-unit'),
@@ -64,13 +69,7 @@ $$('#login-btn').on('click', function(){
     var data = myApp.formToJSON('#login-form');
     data.login = true;
     var url = "validation.php";
-    
-    data.username = 'Testname';
-    data.password = '345';
-    
     console.log(data)
-    
-    mainView.router.load({pageName: 'home'});
     $$.ajax({
         url: url,
         method: 'POST',
@@ -81,6 +80,7 @@ $$('#login-btn').on('click', function(){
         cache: false  
     })
 })
+
 
 var loginError = function(){
     console.log('tees');
@@ -96,14 +96,44 @@ var loginCallBack = function(e){
         mainView.router.load({pageName: 'home'});
         $$('.user-name').text(e.name);
         $$('.balance-count').text(e.balance);
+        profileRelated.name.val(e.name);
+        profileRelated.email.val(e.contact);
+        profileRelated.address.val(e.companyaddr);
     }else {
+        
         alert("wrong password or invalid username");
     }
 }
 
 
+$$('#update-button').on('click', function(e){
+    var profileName = profileRelated.name.val();
+    var profileContact = profileRelated.email.val();
+    var profileAddress = profileRelated.address.val();
+    console.log({id: userinfo.id, profileName:profileName, profileEmail:profileContact, profileAddress:profileAddress});
+    $$.ajax({
+        url: "profileUpdate.php",
+        method: 'POST',
+        data: {id: userinfo.id, profileName:profileName, profileEmail:profileContact, profileAddress:profileAddress},
+        dataType: 'json',
+        success: profileSuccessCallback,
+        error: profileErrorCallback
+    })
+                        
+})
 
+var profileSuccessCallback = function(e){
+    console.log(e);
+    if(e.status == 'success'){
+        $$('.user-name').text(profileRelated.name.val());
+    } else{
+        alert(e.message);
+    }
+}
 
+var profileErrorCallback = function(e){
+    console.log("Error: ", e);
+}
 
 
 $$('#place-bid').on('click', function(e){

@@ -32,7 +32,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="item-link close-panel" href="profile.php">
+                        <a class="item-link close-panel" href="#profile">
                             <div class="item-inner">
                                 <div class="item-title color-black">Account</div>
                             </div>
@@ -158,7 +158,8 @@
                             <div class="left">
                                 <a class="link icon-only open-panel" href="#"> <span class="icon-menu"></span></a>
                             </div>
-                            <div class="center"><span class="text-yellow user-name">We-Invest LL</span> <span class="text-yellow"><span class="icon-dollar-symbol"></span><span style="margin-left: 0px" class="balance-count">45,213</span></span> </div>
+                            <div class="center"><span class="text-yellow user-name">We-Invest LL</span> <span class="text-yellow"><span class="icon-dollar-symbol"></span><span style="margin-left: 0px" class="balance-count">45,213</span></span>
+                            </div>
                             <div class="right">
                                 <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
                             </div>
@@ -172,7 +173,7 @@
                                 <div class="col-50">
                                     <a class="button button-small button-block color-yellow" href="#">
                                         <div class="row"><span class="text-yellow">Balance</span>
-                                            
+
                                         </div>
                                     </a>
                                 </div>
@@ -244,19 +245,21 @@
                                 </center>
                             </div>
                         </div>
-                    <div class="content-block">
-                        <center>
-                            <span class="text-yellow">
+                        <div class="content-block">
+                            <center>
+                                <span class="text-yellow">
                                 <span id="company-unit">(unit)</span> shares at <span id="company-share">(amount/unit)</span>
-                            </span>
-                            <span class="text-yellow">
+                                </span>
+                                <span class="text-yellow">
                                 Sum: <span id="company-amount">(Amount)</span>
-                            </span>
-                        </center>
-                    </div>
+                                </span>
+                            </center>
+                        </div>
                         <div class="clearfix-10">
                             <div class="row">
-                                <div class="col-50"><div class="button button-small button-block color-yellow" class="text-yellow"><input type="number" id="investorunit-input">units</div></div>
+                                <div class="col-50">
+                                    <div class="button button-small button-block color-yellow" class="text-yellow"><input type="number" id="investorunit-input">units</div>
+                                </div>
                                 <div class="col-50"><a id="place-bid" class="button button-small button-block color-yellow" href="#">Place Bid</a></div>
                             </div>
                             <div class="clearfix-20"></div>
@@ -316,7 +319,7 @@
                     <div class="page-content">
                         <div class="content-block">
 
-                           <!-- <div class="page-title">
+                            <!-- <div class="page-title">
                                 <strong class="user-name">We-Invest LLC</strong> <br> You are bidding 1,000,000 shares at $124 per share in LMN Corp.<br>
 
                                 <div class="left"><b>Change Bid: $125</b><br>
@@ -359,6 +362,60 @@
                         </div>
                     </div>
                 </div>
+
+                
+                <div data-page="profile" class="page cached">
+                    <!-- Top Navbar-->
+                    <div class="navbar">
+                        <div class="theme-black navbar-inner">
+                            <div class="left"><a class="link back" href="#"><span class="icon-back"></span><span>Back</span></a></div>
+                            <div class="right">
+                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Scrollable page content-->
+                    <div class="page-content">
+                        <div class="content-block font-13">
+
+                            <div class="page-title">
+                                <strong>Profile</strong>
+                            </div>
+                            <form>
+                                <div class="list-block form-list-block">
+                                    <ul>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">Name</div>
+                                                <div class="item-input">
+                                                    <input id="profile-name" style="color: yellow" type="text" name="name">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">Contact</div>
+                                                <div class="item-input">
+                                                    <input id="profile-email" type="email" name="email" style = "color: yellow" placeholder="Enter your email">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">Address</div>
+                                                <div class="item-input">
+                                                    <input id="profile-address" type="text" name="address" style = "color: yellow" placeholder="Enter your address">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix-10"></div>
+                                    <!--button class="button button-big button-fill button-block color-lightgreen" type="submit">Login Now</button-->
+                                    <a id="update-button" class="button button-big button-fill button-block color-yellow" href="#home">Update Now</a>
+                                </div>
+                            </form>
+                        </div>
+                           </div>
 
 
             </div>
