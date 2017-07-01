@@ -245,17 +245,17 @@
                     <div class="content-block">
                         <center>
                             <span class="text-yellow">
-                                (unit) shares at (amount/unit)
+                                <span id="company-unit">(unit)</span> shares at <span id="company-share">(amount/unit)</span>
                             </span>
                             <span class="text-yellow">
-                                Sum: (Amount)
+                                Sum: <span id="company-amount">(Amount)</span>
                             </span>
                         </center>
                     </div>
                         <div class="clearfix-10">
                             <div class="row">
-                                <div class="col-50"></div>
-                                <div class="col-50"><a class="button button-small button-block color-yellow" href="company_buy">Place Bid: <span class="text-yellow"><span></span>(unit) units</span></a></div>
+                                <div class="col-50"><div class="button button-small button-block color-yellow" class="text-yellow"><input type="number" id="investorunit-input">units</div></div>
+                                <div class="col-50"><a id="place-bid" class="button button-small button-block color-yellow" href="#">Place Bid</a></div>
                             </div>
                             <div class="clearfix-20"></div>
                             <div class="row">
@@ -314,7 +314,7 @@
                     <div class="page-content">
                         <div class="content-block">
 
-                            <div class="page-title">
+                           <!-- <div class="page-title">
                                 <strong class="user-name">We-Invest LLC</strong> <br> You are bidding 1,000,000 shares at $124 per share in LMN Corp.<br>
 
                                 <div class="left"><b>Change Bid: $125</b><br>
@@ -326,7 +326,7 @@
                                 <div style="text-align: center;">
                                     <a class="button button-small button-block color-yellow" href="#">BID NOW</a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

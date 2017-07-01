@@ -15,7 +15,7 @@ $sqla_result = mysqli_query($connection, $sqla);
 $new_balance = mysqli_fetch_assoc($sqla_result)['balance'] - $offer;
 
 if ($new_balance < 0){
-    echo json_encode("Sorry your account balance is low.");
+    echo json_encode(Array('status' => 'Failed', 'message'=> "Sorry your account balance is low."));
     exit;
 } else{
     $sqlb = "INSERT INTO offer (offer, units, investor, company) VALUES ('{$offer}', '{$units}','{$investorid}','{$companyid}')";
