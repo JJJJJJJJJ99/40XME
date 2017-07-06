@@ -265,8 +265,20 @@
                                     </div>
                                     
                                 </div>
-                                <div class="col-25"><a class="link open-popup" data-popup=".confirm-menu" href="#">esssssss</a></div>
+                                <div class="col-25"><a class="link open-popup button button-small button-block color-yellow" data-popup=".confirm-menu" href="#">Place Bid</a></div>
                                 <div class="col-5"></div>
+                                <div class="col-25">
+                                <center>
+                                        <span class="text-yellow" style="font-weight:bold">
+                                        You are currently bidding for:
+                                        </span>
+                                        <span id="user-shares" class="text-yellow">
+                                            0 </span>shares/$US<span id="user-amount-shares">(amount/shares)</span> <span>=</span> <span id="user-total">0</span>
+                                            
+<!--                                            (amount/shares)*user-units-->
+                            
+                                </center>
+                                </div>
 <!--
                                 <div class="col-70">
                                     <div style="border: 0px" class="button button-small button-block color-yellow" class="text-yellow"><input type="number" id="investorunit-input"><span style="font-size: 15px">&nbsp;&nbsp;units</span></div>

@@ -23,7 +23,11 @@ var companyRelated = {
     "buypershare": $$('#company-amount-shares'),
     "name": $$('#company-name'),
     "about": $$('#company-about'),
-    "document": $$('#company-document')
+    "document": $$('#company-document'),
+    "usershares": $$('#user-shares'),
+    "useramountshares": $$('#user-amount-shares'),
+    "usertotal": $$('#user-total')
+    
 }
 
 var investorRelated = {
@@ -220,6 +224,7 @@ var companySuccessCallback = function(e){
     companyRelated.unit.text(e.units);
     companyRelated.name.text(e.name);
     companyRelated.about.attr('href', 'company-about-'+currentCompanyId + '.html');
+    companyRelated.useramountshares.text(companyRelated.buypershare.text());
 }
 var companyErrorCallback = function(e){
     console.log("Error: ", e);
@@ -234,13 +239,13 @@ var companyErrorCallback = function(e){
 $$('#plus-btn').on('click', function(){
     var maximum = parseInt(companyRelated.unit.text());
     if(investorRelated.unitinput.val() == ''){
-        investorRelated.unitinput.val(1);
+        investorRelated.unitinput.val(1).trigger('change');
     }else {
         var valBefore = parseInt(investorRelated.unitinput.val());
         if (valBefore >= maximum) {
             return;
         }else {
-            investorRelated.unitinput.val(valBefore + 1);
+            investorRelated.unitinput.val(valBefore + 1).trigger('change');
         }
     }
 })
@@ -251,11 +256,26 @@ $$('#minus-btn').on('click', function(){
     }else{
         var valBefore = parseInt(investorRelated.unitinput.val());
         if (valBefore <=1){
-            investorRelated.unitinput.val('');
+            investorRelated.unitinput.val('').trigger('change');
             return;
         } else{
-            investorRelated.unitinput.val(valBefore -1);
+            investorRelated.unitinput.val(valBefore -1).trigger('change');
         }
     }
 
+})
+
+$$('#investorunit-input').on('change', function(){
+    console.log('number of units change');
+    
+    if (investorRelated.unitinput.val() == ''){
+        companyRelated.usershares.text(0);
+        companyRelated.usertotal.text(0);
+    }else {
+        var share = parseInt(companyRelated.share.text());
+        var amount = parseInt(investorRelated.unitinput.val());
+        companyRelated.usershares.text(share * amount);
+        
+        companyRelated.usertotal.text(share * amount * parseInt(companyRelated.buypershare.text()));
+    }
 })
