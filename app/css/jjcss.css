@@ -1,3 +1,16 @@
 .jj-yellow{
-    color: #ffc92f!important;
+    color: #a48021!important;
+}
+.icon-menu {
+    color: #a48021;
+}
+.panel.panel-left.panel-reveal.active {
+    background-color: black;
+}
+.jj-0ffwhite {
+    color: whitesmoke!important;
+}
+
+.popup-overlay.modal-overlay-visible {
+    visibility: hidden!important;
 }

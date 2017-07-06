@@ -26,28 +26,28 @@
                 <ul>
                     <li>
                         <a class="item-link close-panel" href="#home">
-                            <div class="item-inner">
-                                <div class="item-title color-black">Home</div>
+                            <div class="item-inner" style="color: whitesmoke">
+                                <div class="item-title">Home</div>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a class="item-link close-panel" href="#profile">
                             <div class="item-inner">
-                                <div class="item-title color-black">Account</div>
+                                <div class="item-title" style="color: whitesmoke">Settings</div>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a class="item-link close-panel" href="about-startup-moola.html">
-                            <div class="item-inner">
-                                <div class="item-title color-black">About</div>
+                            <div class="item-inner" style="color: whitesmoke">
+                                <div class="item-title">40X.me</div>
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
-            <p> <a href="#index" class="button close-panel color-black button-border">Logout</a></p>
+            <p> <a href="#index" class="button close-panel" style="color: whitesmoke">Logout</a></p>
         </div>
     </div>
     <!-- Views-->
@@ -70,7 +70,7 @@
                                     <div class="slide-content-bottom">
                                         <a class="button button-big button-block color-yellow" href="#signin">Login</a>
                                         <div class="clearfix-10"></div>
-                                        <a class="button button-big button-block color-yellow" href="test.html">Apply</a>
+                                        <a class="button button-big button-block color-yellow" href="test.html">Become A Member</a>
                                         <div class="clearfix-10"></div>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@
                                     <div class="slide-content-bottom">
                                         <a class="button button-big button-block color-yellow" href="#signin">Login</a>
                                         <div class="clearfix-10"></div>
-                                        <a class="button button-big button-block color-yellow" href="test.html">Apply</a>
+                                        <a class="button button-big button-block color-yellow" href="test.html">Become A Member</a>
                                         <div class="clearfix-10"></div>
                                     </div>
                                 </div>
@@ -95,8 +95,8 @@
                 <div data-page="signin" class="page cached">
                     <!-- Top Navbar-->
                     <div class="theme-black navbar">
-                        <div class="theme-black navbar-inner">
-                            <div class="left"><a class="link back" href="#"><span class="icon-back"></span><span>Back</span></a></div>
+                        <div class="theme-black navbar-inner" >
+                            <div class="left"><a class="link back" href="#" style="color:#a48021"><span class="icon-back"></span><span>Back</span></a></div>
                             <div class="right">
                                 <a href="#index" class="link"><img src="img/logo.png" alt="" height="42" width="42"></a>
                             </div>
@@ -161,7 +161,7 @@
                             <div class="center" style="height: 100%; font-size: 18px">
                             
                             <div style="height: 50%; line-height: 28px" class="text-yellow user-name">We-Invest LL</div> 
-                            <div style="height: 50%; line-height: 28px" class="text-yellow">Bal: <span class="icon-dollar-symbol"></span><span style="margin-left: 0px" class="balance-count">45,213</span></div>
+                            <div style="height: 50%; line-height: 28px" class="text-yellow">Balance: <span class="icon-dollar-symbol"></span><span style="margin-left: 0px" class="balance-count">45,213</span></div>
                             
                             </div>
                             <div class="right">
@@ -174,7 +174,7 @@
                         <div class="content-block">
 
                             <div class="page-title">
-                                <div class="page-subtitle text-center">Emerging Companies</div>
+                                <div class="page-subtitle text-center">Your Watch List</div>
                                 <div class="list-block">
                                     <ul>
                                         <li>
@@ -215,11 +215,16 @@
                 <div data-page="company" class="page cached">
                     <!-- Top Navbar-->
                     <div class="theme-black navbar">
-                        <div class="navbar-inner">
+                        <div class="theme-black navbar-inner">
                             <div class="left">
                                 <a class="link icon-only open-panel" href="#"> <span class="icon-menu"></span></a>
                             </div>
-                            <div class="center"><span class="text-yellow user-name">We-Invest LL</span></div>
+                            <div class="center" style="height: 100%; font-size: 18px">
+                            
+                            <div style="height: 50%; line-height: 28px" class="text-yellow user-name">We-Invest LL</div> 
+                            <div style="height: 50%; line-height: 28px" class="text-yellow">Balance: <span class="icon-dollar-symbol"></span><span style="margin-left: 0px" class="balance-count">45,213</span></div>
+                            
+                            </div>
                             <div class="right">
                                 <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
                             </div>
@@ -265,7 +270,7 @@
                                 </div>
                                 <div class="col-50">
                                     <a id="company-document" href="company-documents.html" class="link-box link">
-                                        <span class="link-box-icon icon-file"></span> Documents
+                                        <span class="link-box-icon icon-file"></span> Pre-DD
                                     </a>
                                 </div>
                             </div>
@@ -273,12 +278,12 @@
                             <div class="row">
                                 <div class="col-50">
                                     <a href="company-video-presentation.html" class="link-box link">
-                                        <span class="link-box-icon icon-video-player"></span> Video Presentation
+                                        <span class="link-box-icon icon-video-player"></span> Videos
                                     </a>
                                 </div>
                                 <div class="col-50">
                                     <a href="company-key-numbers.html" class="link-box link">
-                                        <span class="link-box-icon icon-key"></span> Key numbers
+                                        <span class="link-box-icon icon-key"></span> Business Metrics
                                     </a>
                                 </div>
                             </div>
@@ -302,8 +307,8 @@
                 <div data-page="company_bid" class="page cached">
                     <!-- Top Navbar-->
                     <div class="navbar">
-                        <div class="navbar-inner">
-                            <div class="left"><a class="link back" href="#"><span class="icon-back"></span><span>Back</span></a></div>
+                        <div class="theme-black navbar-inner">
+                            <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
                             <div class="right">
                                 <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt=""></a>
                             </div>
@@ -333,8 +338,8 @@
                 <div data-page="company_buy" class="page cached">
                     <!-- Top Navbar-->
                     <div class="navbar">
-                        <div class="navbar-inner">
-                            <div class="left"><a class="link back" href="#"><span class="icon-back"></span><span>Back</span></a></div>
+                        <div class="theme-black navbar-inner">
+                            <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
                             <div class="right">
                                 <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt=""></a>
                             </div>
@@ -361,8 +366,8 @@
                 <div data-page="profile" class="page cached">
                     <!-- Top Navbar-->
                     <div class="navbar">
-                        <div class="theme-black navbar-inner">
-                            <div class="left"><a class="link back" href="#"><span class="icon-back"></span><span>Back</span></a></div>
+                        <div class="theme-black navbar-inner" style="background-color: black">
+                            <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
                             <div class="right">
                                 <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" width="42" height="42" alt=""></a>
                             </div>
