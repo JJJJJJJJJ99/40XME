@@ -179,28 +179,38 @@
                                     <ul>
                                         <li>
                                             <div class="content-block">
-                                                <span>
-                                <img src="img/company1.png" style = "width: 80%" alt="" align="middle">
-                                <div class="clearfix"></div>
-                                <a style="margin-top: 10px" id="company-1" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
+                            <span>
+                                <a style="margin-top: 10px; width: 100%" id="company-1" class="button button-small button-fill color-yellow" href="#company">
+                                    <div class="button-box">
+                                        <div class="button-item">Planit</div>
+                                        <div class="button-item">2017-07-05</div>
+                                    </div>
+                                </a>
                             </span>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="content-block">
-                                                <span>
-                            <img src="img/company2.png" style = "width: 80%" alt="" align="middle">
-                            <div class="clearfix"></div>
-                            <a style="margin-top: 10px" id="company-2" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
-                  	</span>
+                            <span>
+                            
+                            <a style="margin-top: 10px; width: 100%" id="company-2" class="button button-small button-fill color-yellow" href="#company">
+                                    <div class="button-box">
+                                        <div class="button-item">Swrve</div>
+                                        <div class="button-item">2017-07-04</div>
+                                    </div>
+                                </a>
+                  	        </span>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="content-block">
-                                                <span>
-                            <img src="img/company3.png" style = "width: 80%" alt="" align="middle">
-                            <div class="clearfix"></div>
-                            <a style="margin-top: 10px" id="company-3" class="button button-small button-fill button-center color-yellow" href="#company">View Details</a>
+                    <span>
+                          <a style="margin-top: 10px; width: 100%" id="company-3" class="button button-small button-fill color-yellow" href="#company">
+                                    <div class="button-box">
+                                        <div class="button-item">ExactCare</div>
+                                        <div class="button-item">2017-07-06</div>
+                                    </div>
+                                </a>
                   	</span>
                                             </div>
                                         </li>
@@ -267,18 +277,7 @@
                                 </div>
                                 <div class="col-25"><a class="link open-popup button button-small button-block color-yellow" data-popup=".confirm-menu" href="#">Place Bid</a></div>
                                 <div class="col-5"></div>
-                                <div class="col-25">
-                                <center>
-                                        <span class="text-yellow" style="font-weight:bold">
-                                        You are currently bidding for:
-                                        </span>
-                                        <span id="user-shares" class="text-yellow">
-                                            0 </span>shares/$US<span id="user-amount-shares">(amount/shares)</span> <span>=</span> <span id="user-total">0</span>
-                                            
-<!--                                            (amount/shares)*user-units-->
-                            
-                                </center>
-                                </div>
+                                
 <!--
                                 <div class="col-70">
                                     <div style="border: 0px" class="button button-small button-block color-yellow" class="text-yellow"><input type="number" id="investorunit-input"><span style="font-size: 15px">&nbsp;&nbsp;units</span></div>
@@ -286,6 +285,24 @@
                                 <div class="col-30" style="margin-right: 10px;"><a id="place-bid" class="button button-small button-block color-yellow" href="#">Place Bid</a></div>
 -->
                             </div>
+                            
+                            <div class="row">
+                                <div class="col-100" style="padding-left: 32px">
+                                    <span class="text-yellow" style="font-weigh:bold">
+                                    You are currently bidding for:
+                                    </span>                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-100" style="padding-left: 32px">
+                                    <span class="user-shares" class="text-yellow">
+                                        0 </span>shares &nbsp;/&nbsp;$US<span class="user-amount-shares">(amount/shares)</span> <span>&nbsp;=&nbsp;</span> <span class="user-total">0</span>
+
+<!--                                            (amount/shares)*user-units-->
+
+                                </div>
+                            </div>
+                            
                             <div class="clearfix-20"></div>
                             <div class="row">
                                 <div class="col-50">
@@ -476,10 +493,29 @@
                     <div class="page-content">
                         <div class="content-block">
                             <div class="clearfix-20"></div>
-                            <a href="#" class="link close-popup icon-close-popup"><span class="icon-cancel"></span></a>
-                            <a href="home.html" class="link close-popup"><img src="img/40xlogo.png" alt=""></a>
-                            <div class="clearfix-20"></div>
-                            <p>test</p>
+                            <a href="#" class="link close-popup icon-close-popup jj-yellow"><span class="icon-cancel"></span></a>
+                            <div class="row">
+                                <div class="col-100" style="padding-left: 32px">
+                                    <span class="text-yellow" style="font-weigh:bold">
+                                    You are currently bidding for:
+                                    </span>                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-100" style="padding-left: 32px">
+                                    <span class="user-shares" class="text-yellow">
+                                        0 </span>shares &nbsp;/&nbsp;$US<span class="user-amount-shares">(amount/shares)</span> <span>&nbsp;=&nbsp;</span> <span class="user-total">0</span>
+
+<!--                                            (amount/shares)*user-units-->
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-50"><a href="#" id="place-bid" class="close-popup button button-small button-block color-yellow" href="#">Confirm</a></div>
+                                <div class="col-50"><a href="#" class="link close-popup button button-small button-block color-yellow jj-yellow"><span>Cancel</span></a></div>
+                            </div>
+                            
+                            
                         </div>
                     </div>
                 </div>

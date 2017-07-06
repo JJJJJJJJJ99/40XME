@@ -24,9 +24,9 @@ var companyRelated = {
     "name": $$('#company-name'),
     "about": $$('#company-about'),
     "document": $$('#company-document'),
-    "usershares": $$('#user-shares'),
-    "useramountshares": $$('#user-amount-shares'),
-    "usertotal": $$('#user-total')
+    "usershares": $$('.user-shares'),
+    "useramountshares": $$('.user-amount-shares'),
+    "usertotal": $$('.user-total')
     
 }
 
@@ -75,15 +75,16 @@ $$('#login-btn').on('click', function(){
     var data = myApp.formToJSON('#login-form');
     data.login = true;
     var url = "validation.php";
+     data.username = 'Testname';
+     data.password = '345';
     if (data.password == '' || data.username == '') {
-        mainView.router.load({pageName: 'home'});
-        return;
-//        alert('please input your login information!');
+//        mainView.router.load({pageName: 'home'});
 //        return;
+        alert('please input your login information!');
+        return;
     }
     
-   // data.username = 'Testname';
-   // data.password = '345';
+
     
     console.log(data)
     
@@ -157,7 +158,7 @@ var profileErrorCallback = function(e){
 $$('#place-bid').on('click', function(e){
     console.log(investorRelated.unitinput.val());
     var units = investorRelated.unitinput.val();
-    console.log({companyid: currentCompanyId, investorid: parseInt(userinfo.id), units: parseInt(units)});
+//    console.log({companyid: currentCompanyId, investorid: parseInt(userinfo.id), units: parseInt(units)});
     
     $$.ajax({
         url: "investorBalanceData.php",
@@ -167,7 +168,7 @@ $$('#place-bid').on('click', function(e){
         success: bidSuccessCallback,
         error: bidErrorCallback
     })
-     investorRelated.unitinput.val(null);
+//     investorRelated.unitinput.val(null);
     
 })
 
@@ -269,13 +270,25 @@ $$('#investorunit-input').on('change', function(){
     console.log('number of units change');
     
     if (investorRelated.unitinput.val() == ''){
-        companyRelated.usershares.text(0);
-        companyRelated.usertotal.text(0);
+        companyRelated.usershares.each(function(idx, item){
+            $$(item).text(0);
+        });
+        companyRelated.usertotal.each(function(idx, item){
+            $$(item).text(0);
+        });
     }else {
         var share = parseInt(companyRelated.share.text());
         var amount = parseInt(investorRelated.unitinput.val());
-        companyRelated.usershares.text(share * amount);
         
-        companyRelated.usertotal.text(share * amount * parseInt(companyRelated.buypershare.text()));
+        companyRelated.usershares.each(function(idx, item){
+            console.log(idx);
+            console.log(item);
+            $$(item).text(share * amount);
+        }); 
+        
+        companyRelated.usertotal.each(function(idx, item){
+            $$(item).text(share * amount * parseInt(companyRelated.buypershare.text()));
+        });
+        
     }
 })

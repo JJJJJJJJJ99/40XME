@@ -76,4 +76,10 @@
     height: 20px;
 }
 
-
+.button-box {
+    display: flex;
+    justify-content: space-around;
+}
+.button-item {
+    flex-grow: 0;
+}
