@@ -4,12 +4,12 @@ $companyid = $_POST['companyid']; // ID from company
 $investorid = $_POST['investorid'];
 $units = (int) $_POST['units'];
 
-$sqlbuypershare = "SELECT buypershare FROM company WHERE id = '{$companyid}'";
-$buypershare_result = mysqli_query($connection, $sqlbuypershare);
-$buypershare = (int) mysqli_fetch_assoc($buypershare_result)['buypershare'];
+$sqlshares = "SELECT shares FROM company WHERE id = '{$companyid}'";
+$shares_result = mysqli_query($connection, $sqlshares);
+$shares = (int) mysqli_fetch_assoc($shares_result)['shares'];
 
 
-$offer = $buypershare * $units;
+$offer = $shares * $units;
 $sqla = "SELECT balance FROM investor WHERE id = '{$investorid}'";
 $sqla_result = mysqli_query($connection, $sqla);
 $new_balance = mysqli_fetch_assoc($sqla_result)['balance'] - $offer;

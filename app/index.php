@@ -247,19 +247,32 @@
                         <div class="content-block">
                             <center>
                                 <span class="text-yellow">
-                                <span id="company-unit">(unit)</span> shares at <span id="company-share">(amount/unit)</span>
+                                <span id="company-unit">(units)</span> Units @ <span id="company-share">(shares)</span>
                                 </span>
                                 <span class="text-yellow">
-                                Sum: <span id="company-amount">(Amount)</span>
+                                Shares @ $US&nbsp;<span id="company-amount-shares">(amount/shares)</span> <span>/share</span>
                                 </span>
                             </center>
                         </div>
                         <div class="clearfix-10">
                             <div class="row">
+                                <div class="col-70 jj-units">
+                                    <div class="jj-units-word">No.of Units:</div>
+                                    <div class="jj-units-input">
+                                        <div id="plus-btn">+</div>
+                                        <input id="investorunit-input" type="number">
+                                        <div id="minus-btn">-</div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-25"><a class="link open-popup" data-popup=".confirm-menu" href="#">esssssss</a></div>
+                                <div class="col-5"></div>
+<!--
                                 <div class="col-70">
                                     <div style="border: 0px" class="button button-small button-block color-yellow" class="text-yellow"><input type="number" id="investorunit-input"><span style="font-size: 15px">&nbsp;&nbsp;units</span></div>
                                 </div>
                                 <div class="col-30" style="margin-right: 10px;"><a id="place-bid" class="button button-small button-block color-yellow" href="#">Place Bid</a></div>
+-->
                             </div>
                             <div class="clearfix-20"></div>
                             <div class="row">
@@ -301,7 +314,7 @@
                             <div class="col-33"><a class="button button-small button-middle color-yellow" href="#home">Back to List</a></div>
 
                         </div>
-                    </div>
+                    </div>`
                 </div>
 
                 <div data-page="company_bid" class="page cached">
@@ -335,8 +348,9 @@
                     </div>
                 </div>
 
+<!--
                 <div data-page="company_buy" class="page cached">
-                    <!-- Top Navbar-->
+ 
                     <div class="navbar">
                         <div class="theme-black navbar-inner">
                             <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
@@ -345,7 +359,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Scrollable page content-->
+ 
                     <div class="page-content">
                         <div class="content-block">
 
@@ -361,6 +375,7 @@
                         </div>
                     </div>
                 </div>
+-->
 
                 
                 <div data-page="profile" class="page cached">
@@ -440,6 +455,26 @@
             </div>
         </div>
     </div>
+    
+    <div class="popup confirm-menu">
+        <div class="view">
+            <div class="pages">
+                <div class="page">
+
+                    <div class="page-content">
+                        <div class="content-block">
+                            <div class="clearfix-20"></div>
+                            <a href="#" class="link close-popup icon-close-popup"><span class="icon-cancel"></span></a>
+                            <a href="home.html" class="link close-popup"><img src="img/40xlogo.png" alt=""></a>
+                            <div class="clearfix-20"></div>
+                            <p>test</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- End Popup -->
 
     <!-- Path to Framework7 Library JS-->

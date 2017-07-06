@@ -20,6 +20,7 @@ var companyRelated = {
     "unit": $$('#company-unit'),
     "share": $$('#company-share'),
     "amount": $$('#company-amount'),
+    "buypershare": $$('#company-amount-shares'),
     "name": $$('#company-name'),
     "about": $$('#company-about'),
     "document": $$('#company-document')
@@ -66,12 +67,15 @@ myApp.onPageInit('startup', function(page) {
 
 
 $$('#login-btn').on('click', function(){
+    
     var data = myApp.formToJSON('#login-form');
     data.login = true;
     var url = "validation.php";
     if (data.password == '' || data.username == '') {
-        alert('please input your login information!');
+        mainView.router.load({pageName: 'home'});
         return;
+//        alert('please input your login information!');
+//        return;
     }
     
    // data.username = 'Testname';
@@ -208,8 +212,11 @@ var company = function(id){
 
 var companySuccessCallback = function(e){
     console.log(e);
-    companyRelated.amount.text(e.amount);
-    companyRelated.share.text(e.buypershare);
+//    companyRelated.amount.text(e.amount);
+    var buypershare = parseInt(e.amount)/parseInt(e.shares);
+    console.log(e.amount, e.shares);
+    companyRelated.buypershare.text(buypershare);
+    companyRelated.share.text(e.shares);
     companyRelated.unit.text(e.units);
     companyRelated.name.text(e.name);
     companyRelated.about.attr('href', 'company-about-'+currentCompanyId + '.html');
@@ -218,3 +225,37 @@ var companyErrorCallback = function(e){
     console.log("Error: ", e);
 }
 
+
+
+
+
+
+// plus and minus button in company page
+$$('#plus-btn').on('click', function(){
+    var maximum = parseInt(companyRelated.unit.text());
+    if(investorRelated.unitinput.val() == ''){
+        investorRelated.unitinput.val(1);
+    }else {
+        var valBefore = parseInt(investorRelated.unitinput.val());
+        if (valBefore >= maximum) {
+            return;
+        }else {
+            investorRelated.unitinput.val(valBefore + 1);
+        }
+    }
+})
+
+$$('#minus-btn').on('click', function(){
+    if(investorRelated.unitinput.val() == ''){
+        return;
+    }else{
+        var valBefore = parseInt(investorRelated.unitinput.val());
+        if (valBefore <=1){
+            investorRelated.unitinput.val('');
+            return;
+        } else{
+            investorRelated.unitinput.val(valBefore -1);
+        }
+    }
+
+})
