@@ -13,7 +13,10 @@ var $$ = Dom7;
 var profileRelated = {
     "name": $$('#profile-name'),
     "email": $$('#profile-email'),
-    "address": $$('#profile-address') 
+    "address": $$('#profile-address'),
+    "companyname": $$('#profile-companyname'),
+    "tel": $$('#profile-tel'),
+    "contactperson": $$('#profile-contactperson')
 }
 
 var companyRelated = {
@@ -75,8 +78,8 @@ $$('#login-btn').on('click', function(){
     var data = myApp.formToJSON('#login-form');
     data.login = true;
     var url = "validation.php";
-     data.username = 'Testname';
-     data.password = '345';
+ //    data.username = 'Testname';
+ //    data.password = '345';
     if (data.password == '' || data.username == '') {
 //        mainView.router.load({pageName: 'home'});
 //        return;
@@ -111,29 +114,56 @@ var loginCallBack = function(e){
     
     if (e.status == 'success') {
         userinfo = e;
+        
         console.log("validation");
+        console.log(e)
+        console.log(profileRelated)
         mainView.router.load({pageName: 'home'});
         $$('.user-name').text(e.name);
-        $$('.balance-count').text(e.balance);
+        $$('.balance-count').text(money(e.balance));
         profileRelated.name.val(e.name);
         profileRelated.email.val(e.contact);
         profileRelated.address.val(e.companyaddr);
+        profileRelated.companyname.val(e.companyname);
+        profileRelated.tel.val(e.tel);
+        profileRelated.contactperson.val(e.contactperson);
+//        $$('#profile-contactperson').val(e.contactperson);
+        
+        console.log("debug")
     }else {
         
         alert("wrong password or invalid username");
     }
 }
 
+$$('#homewebsite').on('click', function(e){
+    window.location.href = "http://40x.me/"
+})
+$$('.logowebsite').on('click', function(e){
+    console.log("clicked")
+    window.location.href = "http://40x.me/"
+    
+})
+
+
+// view document click listen
+$$(".viewdocument").on('click', function(e){
+    console.log("view document");
+    console.log($$(this).data('href'))
+})
 
 $$('#update-button').on('click', function(e){
     var profileName = profileRelated.name.val();
     var profileContact = profileRelated.email.val();
     var profileAddress = profileRelated.address.val();
+    var profileCname = profileRelated.companyname.val();
+    var profiletel = profileRelated.tel.val();
+    var profilecontactperson = profileRelated.contactperson.val();
     console.log({id: userinfo.id, profileName:profileName, profileEmail:profileContact, profileAddress:profileAddress});
     $$.ajax({
         url: "profileUpdate.php",
         method: 'POST',
-        data: {id: userinfo.id, profileName:profileName, profileEmail:profileContact, profileAddress:profileAddress},
+        data: {id: userinfo.id, profileName:profileName, profileEmail:profileContact, profileAddress:profileAddress, profiletel: profiletel, profileContactperson: profilecontactperson, profileCname: profileCname},
         dataType: 'json',
         success: profileSuccessCallback,
         error: profileErrorCallback
@@ -180,7 +210,7 @@ var bidSuccessCallback = function(e){
     console.log(e);
     if(e.status == 'success') {
         console.log(e.balance);
-        $$('.balance-count').text(e.balance);
+        $$('.balance-count').text(money(e.balance));
     }else {
         alert(e.message);
     }
@@ -220,9 +250,9 @@ var companySuccessCallback = function(e){
 //    companyRelated.amount.text(e.amount);
     var buypershare = parseInt(e.amount)/parseInt(e.shares);
     console.log(e.amount, e.shares);
-    companyRelated.buypershare.text(buypershare);
-    companyRelated.share.text(e.shares);
-    companyRelated.unit.text(e.units);
+    companyRelated.buypershare.text(money(buypershare));
+    companyRelated.share.text(money(e.shares));
+    companyRelated.unit.text(money(e.units));
     companyRelated.name.text(e.name);
     companyRelated.about.attr('href', 'company-about-'+currentCompanyId + '.html');
     companyRelated.useramountshares.text(companyRelated.buypershare.text());
@@ -292,3 +322,7 @@ $$('#investorunit-input').on('change', function(){
         
     }
 })
+
+var money = function(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}

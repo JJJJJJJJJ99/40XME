@@ -41,7 +41,7 @@
                     <li>
                         <a class="item-link close-panel" href="about-startup-moola.html">
                             <div class="item-inner" style="color: whitesmoke">
-                                <div class="item-title">40X.me</div>
+                                <div class="item-title">About 40X.me</div>
                             </div>
                         </a>
                     </li>
@@ -64,26 +64,36 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide01">
                                 <div class="slide-content">
-                                    <img src="img/40xsmalltrans-300x300.png" alt="">
+                                    <img src="img/40xlogo.png" alt="">
                                     <div class="clearfix-20"></div>
                                     <div class="text-yellow"></div>
                                     <div class="slide-content-bottom">
-                                        <a class="button button-big button-block color-yellow" href="#signin">Login</a>
+                                       <div class="row">
+                                       
+                                        <a class="button button-big color-yellow" style="width: 70%" href="#signin">Login</a>
                                         <div class="clearfix-10"></div>
-                                        <a class="button button-big button-block color-yellow" href="test.html">Become A Member</a>
+                                        
+                                         </div>
+                
+                                         <div class="row">
+                                        
+                                         <a id="homewebsite" class="button button-big color-yellow" style="width: 70%" href="test.html">Become A Member</a>
+                                         
+                                         </div>
+                                         
                                         <div class="clearfix-10"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide slide02">
                                 <div class="slide-content">
-                                    <img src="img/40xsmalltrans-300x300.png" alt="">
+                                    <img src="img/40xlogo.png" alt="">
                                     <div class="clearfix-20"></div>
                                     <div class="text-yellow"></div>
                                     <div class="slide-content-bottom">
-                                        <a class="button button-big button-block color-yellow" href="#signin">Login</a>
+                                        <a class="button button-block color-yellow" href="#signin">Login</a>
                                         <div class="clearfix-10"></div>
-                                        <a class="button button-big button-block color-yellow" href="test.html">Become A Member</a>
+                                        <a class="button button-block color-yellow" href="test.html">Become A Member</a>
                                         <div class="clearfix-10"></div>
                                     </div>
                                 </div>
@@ -114,7 +124,7 @@
                                         <li class="item-content">
                                             <div class="item-inner">
                                                 <div class="item-title label jj-yellow">User Name</div>
-                                                <div class="item-input">
+                                                <div class="item-input focus-state">
                                                     <input style="color: yellow" type="text" name="username" placeholder="Enter User ID">
                                                 </div>
                                             </div>
@@ -122,7 +132,7 @@
                                         <li class="item-content">
                                             <div class="item-inner">
                                                 <div class="item-title label jj-yellow">Password</div>
-                                                <div class="item-input">
+                                                <div class="item-input focus-state">
                                                     <input style="color: yellow" type="password" name="password" placeholder="Enter Password">
                                                 </div>
                                             </div>
@@ -165,7 +175,7 @@
                             
                             </div>
                             <div class="right">
-                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
+                                <a class="link logowebsite" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
                             </div>
                         </div>
                     </div>
@@ -236,7 +246,7 @@
                             
                             </div>
                             <div class="right">
-                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
+                                <a class="link logowebsite" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
                             </div>
                         </div>
                     </div>
@@ -257,7 +267,7 @@
                         <div class="content-block">
                             <center>
                                 <span class="text-yellow">
-                                <span id="company-unit">(units)</span> Units @ <span id="company-share">(shares)</span>
+                                Offer:&nbsp;<span id="company-unit">(units)</span> Units @ <span id="company-share">(shares)</span>
                                 </span>
                                 <span class="text-yellow">
                                 Shares @ $US&nbsp;<span id="company-amount-shares">(amount/shares)</span> <span>/share</span>
@@ -311,7 +321,7 @@
                                     </a>
                                 </div>
                                 <div class="col-50">
-                                    <a id="company-document" href="company-documents.html" class="link-box link">
+                                    <a id="company-document" href="#company-documents" class="link-box link">
                                         <span class="link-box-icon icon-file"></span> Pre-DD
                                     </a>
                                 </div>
@@ -377,35 +387,6 @@
                     </div>
                 </div>
 
-<!--
-                <div data-page="company_buy" class="page cached">
- 
-                    <div class="navbar">
-                        <div class="theme-black navbar-inner">
-                            <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
-                            <div class="right">
-                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
- 
-                    <div class="page-content">
-                        <div class="content-block">
-
-                            <div class="page-title">
-                                <strong class="user-name">We-Invest LLC</strong> <br> You are bidding 5,000,000 shares at<br> $100 per share in LMN Corp.<br>
-                                <br>
-
-                                <div class="left">Closes on Mar 31, 2017<br></div><br>
-                            </div>
-                            <div style="text-align: center;">
-                                <a class="button button-small button-block color-yellow" href="#">BUY NOW</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
--->
-
                 
                 <div data-page="profile" class="page cached">
                     <!-- Top Navbar-->
@@ -413,7 +394,7 @@
                         <div class="theme-black navbar-inner" style="background-color: black">
                             <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
                             <div class="right">
-                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" width="42" height="42" alt=""></a>
+                                <a class="link logowebsite" href="#"><img src="img/logo.png" width="42" height="42" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -429,15 +410,15 @@
                                     <ul>
                                         <li class="item-content">
                                             <div class="item-inner">
-                                                <div class="item-title label">Name</div>
+                                                <div class="item-title label">Company Name</div>
                                                 <div class="item-input">
-                                                    <input id="profile-name" style="color: yellow" type="text" name="name">
+                                                    <input id="profile-companyname" style="color: yellow" type="text" name="companyname">
                                                 </div>
                                             </div>
                                         </li>
                                         <li class="item-content">
                                             <div class="item-inner">
-                                                <div class="item-title label">Contact</div>
+                                                <div class="item-title label">Email</div>
                                                 <div class="item-input">
                                                     <input id="profile-email" type="email" name="email" style = "color: yellow" placeholder="Enter your email">
                                                 </div>
@@ -445,9 +426,17 @@
                                         </li>
                                         <li class="item-content">
                                             <div class="item-inner">
-                                                <div class="item-title label">Address</div>
+                                                <div class="item-title label">Tel</div>
                                                 <div class="item-input">
-                                                    <input id="profile-address" type="text" name="address" style = "color: yellow" placeholder="Enter your address">
+                                                    <input id="profile-tel" type="number" name="tel" style = "color: yellow" placeholder="Enter your tel">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">Contact Person</div>
+                                                <div class="item-input">
+                                                    <input id="profile-contactperson" type="text" name="contactperson" value="12312" style = "color: yellow" placeholder="Enter your name">
                                                 </div>
                                             </div>
                                         </li>
@@ -462,6 +451,35 @@
 
 
             </div>
+                
+                <div data-page="company-documents" class="page cached">
+                    <!-- Top Navbar-->
+                    
+<!--                    todo-->
+                    <div class="navbar">
+                        <div class="theme-black navbar-inner" style="background-color: black">
+                            <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
+                            <div class="right">
+                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" width="42" height="42" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Scrollable page content-->
+                    <div class="page-content">
+                        <div class="content-block font-13">
+
+                            <div class="page-title">
+                                <strong>Documents</strong> Click to view Documents resources
+                            </div>
+                            <hr />
+                            <ul class="bullet-list-custom">
+
+                                <li><a data-href="http://www.pdf995.com/samples/pdf.pdf" class="viewdocument" href="#"><span class="icon-download custom-icon"></span>test.pdf<div class="text-yellow">256kb</div></a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 
