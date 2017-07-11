@@ -33,6 +33,7 @@ var companyRelated = {
     
 }
 
+
 var investorRelated = {
     "unitinput": $$('#investorunit-input')
 }
@@ -142,15 +143,10 @@ $$('#homewebsite').on('click', function(e){
 $$('.logowebsite').on('click', function(e){
     console.log("clicked")
     window.location.href = "http://40x.me/"
-    
 })
 
 
-// view document click listen
-$$(".viewdocument").on('click', function(e){
-    console.log("view document");
-    console.log($$(this).data('href'))
-})
+
 
 $$('#update-button').on('click', function(e){
     var profileName = profileRelated.name.val();
@@ -245,6 +241,7 @@ var company = function(id){
 }
 
 
+
 var companySuccessCallback = function(e){
     console.log(e);
 //    companyRelated.amount.text(e.amount);
@@ -256,13 +253,31 @@ var companySuccessCallback = function(e){
     companyRelated.name.text(e.name);
     companyRelated.about.attr('href', 'company-about-'+currentCompanyId + '.html');
     companyRelated.useramountshares.text(companyRelated.buypershare.text());
+    generateFileList(e.file);
+    
 }
 var companyErrorCallback = function(e){
     console.log("Error: ", e);
 }
 
+function generateFileList(fileList){
+    var listContent = "";
+    for(var i = 0; i < fileList.length; i++){
+        temp = '<li><a class="viewdocument link open-popup" data-popup=".more-menu" data-href="'+fileList[i].path+'" href="#"><span class="icon-download custom-icon"></span>'+fileList[i].filename+'</a></li>';
+        listContent += temp;
+    }
+    $$('ul.bullet-list-custom').html(listContent);
+    
+    // view document click listen
+    $$(".viewdocument").on('click', function(e){
+        console.log("view document");
+        href = $$(this).data('href');
+        src = "http://docs.google.com/gview?url="+href+"&embedded=true";
+        iframeArea = $$("#iframe-area")
+        iframeArea.html('<iframe style="width: 100%; height: 100%" src="'+src+'" frameborder="0"></iframe>')
 
-
+    })
+}
 
 
 

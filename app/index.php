@@ -69,7 +69,6 @@
                                     <div class="text-yellow"></div>
                                     <div class="slide-content-bottom">
                                        <div class="row">
-                                       
                                         <a class="button button-big color-yellow" style="width: 70%" href="#signin">Login</a>
                                         <div class="clearfix-10"></div>
                                         
@@ -455,7 +454,7 @@
                 <div data-page="company-documents" class="page cached">
                     <!-- Top Navbar-->
                     
-<!--                    todo-->
+<!--                    todo image icon fix-->
                     <div class="navbar">
                         <div class="theme-black navbar-inner" style="background-color: black">
                             <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
@@ -474,7 +473,7 @@
                             <hr />
                             <ul class="bullet-list-custom">
 
-                                <li><a data-href="http://www.pdf995.com/samples/pdf.pdf" class="viewdocument" href="#"><span class="icon-download custom-icon"></span>test.pdf<div class="text-yellow">256kb</div></a></li>
+                                
                             </ul>
 
                         </div>
@@ -489,13 +488,12 @@
             <div class="pages">
                 <div class="page">
 
-                    <div class="page-content">
-                        <div class="content-block">
-                            <div class="clearfix-20"></div>
+                    <div class="page-content" style="height: 100%">
+                        <div class="content-block" style="margin-top: 52px; height: 100%">
                             <a href="#" class="link close-popup icon-close-popup"><span class="icon-cancel"></span></a>
-                            <a href="home.html" class="link close-popup"><img src="img/40xlogo.png" alt=""></a>
-                            <div class="clearfix-20"></div>
-                            <p><a href="terms-conditions.html" class="button close-panel color-white button-border close-popup">Terms &amp; Conditions</a></p>
+                            <div style="height: 100%" id="iframe-area">
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
