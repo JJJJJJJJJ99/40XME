@@ -162,7 +162,8 @@ $$('#update-button').on('click', function(e){
         data: {id: userinfo.id, profileName:profileName, profileEmail:profileContact, profileAddress:profileAddress, profiletel: profiletel, profileContactperson: profilecontactperson, profileCname: profileCname},
         dataType: 'json',
         success: profileSuccessCallback,
-        error: profileErrorCallback
+        error: profileErrorCallback,
+        cache: false
     })
                         
 })
@@ -192,7 +193,8 @@ $$('#place-bid').on('click', function(e){
         data: {companyid: currentCompanyId, investorid: parseInt(userinfo.id), units: parseInt(units)},
         dataType: 'json',
         success: bidSuccessCallback,
-        error: bidErrorCallback
+        error: bidErrorCallback,
+        cache: false
     })
 //     investorRelated.unitinput.val(null);
     
@@ -236,7 +238,8 @@ var company = function(id){
         data: {id: id},
         dataType: 'json',
         success: companySuccessCallback,
-        error: companyErrorCallback
+        error: companyErrorCallback,
+        cache: false
     })
 }
 
@@ -254,6 +257,7 @@ var companySuccessCallback = function(e){
     companyRelated.about.attr('href', 'company-about-'+currentCompanyId + '.html');
     companyRelated.useramountshares.text(companyRelated.buypershare.text());
     generateFileList(e.file);
+    $$('#plus-btn').click();
     
 }
 var companyErrorCallback = function(e){
@@ -283,6 +287,7 @@ function generateFileList(fileList){
 
 // plus and minus button in company page
 $$('#plus-btn').on('click', function(){
+    console.log("plus click")
     var maximum = parseInt(companyRelated.unit.text());
     if(investorRelated.unitinput.val() == ''){
         investorRelated.unitinput.val(1).trigger('change');

@@ -73,11 +73,13 @@
     border: 0px;
     text-align: center;
     height: 20px;
+    background-color: black;
+    color: #a48021;
 }
 
 .button-box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .button-item {
     flex-grow: 0;

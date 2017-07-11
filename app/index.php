@@ -206,7 +206,7 @@
                                 <a style="margin-top: 10px; width: 100%" id="company-1" class="button button-small button-fill color-yellow" href="#company">
                                     <div class="button-box">
                                         <div class="button-item">Snap</div>
-                                        <div class="button-item">2017-07-05</div>
+                                        <div class="button-item">Oct 30, 17</div>
                                     </div>
                                 </a>
                             </span>
@@ -321,7 +321,7 @@
                             <div class="row">
                                 <div class="col-100" style="padding-left: 32px">
                                     <span class="user-shares" class="text-yellow">
-                                        0 </span>shares &nbsp;/&nbsp;$US<span class="user-amount-shares">(amount/shares)</span> <span>&nbsp;=&nbsp;</span> <span class="user-total">0</span>
+                                        0 </span>&nbsp;shares &nbsp;/&nbsp;$US&nbsp;<span class="user-amount-shares">(amount/shares)</span> <span>&nbsp;=&nbsp;</span> <span class="user-total">0</span>
 
 <!--                                            (amount/shares)*user-units-->
 
@@ -560,7 +560,7 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
-    <script type="text/javascript" src="js/kitchen-sink.js"></script>
+    <script type="text/javascript" src="js/kitchen-sink-1.js"></script>
 </body>
 
 </html>
