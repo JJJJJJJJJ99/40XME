@@ -188,16 +188,31 @@
                                     <ul>
                                         <li>
                                             <div class="content-block">
+                                                <span>
+                                                    <div class="button-box">
+                                                        <div class="button-item">Company Name</div>
+                                                        <div class="button-item">Closing Date</div>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                   <div class="list-block">
+                                    <ul>
+                                        <li>
+                                            <div class="content-block">
                             <span>
                                 <a style="margin-top: 10px; width: 100%" id="company-1" class="button button-small button-fill color-yellow" href="#company">
                                     <div class="button-box">
-                                        <div class="button-item">Planit</div>
+                                        <div class="button-item">Snap</div>
                                         <div class="button-item">2017-07-05</div>
                                     </div>
                                 </a>
                             </span>
                                             </div>
                                         </li>
+<!--
                                         <li>
                                             <div class="content-block">
                             <span>
@@ -223,6 +238,7 @@
                   	</span>
                                             </div>
                                         </li>
+-->
                                     </ul>
                                 </div>
 
