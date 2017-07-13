@@ -7,7 +7,7 @@ if (isset($_POST['username'])&&isset($_POST['password'])){
     echo json_encode("Something wrong with database.");
 }
 
-$sql = "SELECT id, name, balance, companyaddr, contact, companyname, tel, contactperson FROM investor where name = '{$investname}' and password = '{$investpass}'";
+$sql = "SELECT id, name, balance, companyaddr, contact, companyname, tel, contactperson, ContactFirstname, ContactLastname FROM investor where name = '{$investname}' and password = '{$investpass}'";
 $query_result = mysqli_query($connection, $sql);
 if (!$query_result){
     echo json_encode("Query Failed " . mysqli_error($connection));

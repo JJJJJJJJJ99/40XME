@@ -85,3 +85,9 @@
     flex-grow: 0;
 }
 
+.bottom-line{
+    border-bottom: 2px solid #a48021;
+}
+.item-input-field:after, .input-field:after{
+    height: 0px!important;
+}

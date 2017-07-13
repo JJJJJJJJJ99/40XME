@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/framework7.material.colors.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/kitchen-sink.css">
-    <link rel="stylesheet" href="css/jjcss.css">
+    <link rel="stylesheet" href="css/jjcss-1.css">
 </head>
 
 <body class="theme-yellow">
@@ -123,7 +123,7 @@
                                         <li class="item-content">
                                             <div class="item-inner">
                                                 <div class="item-title label jj-yellow">User Name</div>
-                                                <div class="item-input focus-state">
+                                                <div class="item-input bottom-line">
                                                     <input style="color: yellow" type="text" name="username" placeholder="Enter User ID">
                                                 </div>
                                             </div>
@@ -131,7 +131,7 @@
                                         <li class="item-content">
                                             <div class="item-inner">
                                                 <div class="item-title label jj-yellow">Password</div>
-                                                <div class="item-input focus-state">
+                                                <div class="item-input bottom-line">
                                                     <input style="color: yellow" type="password" name="password" placeholder="Enter Password">
                                                 </div>
                                             </div>
@@ -314,7 +314,7 @@
                             <div class="row">
                                 <div class="col-100" style="padding-left: 32px">
                                     <span class="text-yellow" style="font-weigh:bold">
-                                    You are currently bidding for:
+                                    You are bidding for:
                                     </span>                    
                                 </div>
                             </div>
@@ -357,7 +357,7 @@
                             <div class="clearfix-20"></div>
                             <div class="row">
                                 <div class="col-50">
-                                    <a href="company-question.html" class="link-box link">
+                                    <a href="#company-question" class="link-box link">
                                         <span class="link-box-icon icon-question"></span> Ask a question
                                     </a>
                                 </div>
@@ -425,36 +425,38 @@
                                     <ul>
                                         <li class="item-content">
                                             <div class="item-inner">
-                                                <div class="item-title label">Company Name</div>
-                                                <div class="item-input">
-                                                    <input id="profile-companyname" style="color: yellow" type="text" name="companyname">
+                                                <div class="item-title label">First Name</div>
+                                                <div class="item-input bottom-line">
+                                                    <input id="profile-firstname" style="color: #a48021" type="text">
                                                 </div>
                                             </div>
                                         </li>
                                         <li class="item-content">
                                             <div class="item-inner">
+                                                <div class="item-title label">Last Name</div>
+                                                <div class="item-input bottom-line">
+                                                    <input id="profile-lastname" style="color: #a48021" type="text">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="item-content">
+                                            <div class="item-inner">
                                                 <div class="item-title label">Email</div>
-                                                <div class="item-input">
-                                                    <input id="profile-email" type="email" name="email" style = "color: yellow" placeholder="Enter your email">
+                                                <div class="item-input bottom-line">
+                                                    <input id="profile-email" type="email" name="email" style="color: #a48021" placeholder="Enter your email">
                                                 </div>
                                             </div>
                                         </li>
                                         <li class="item-content">
                                             <div class="item-inner">
                                                 <div class="item-title label">Tel</div>
-                                                <div class="item-input">
-                                                    <input id="profile-tel" type="number" name="tel" style = "color: yellow" placeholder="Enter your tel">
+                                                <div class="item-input bottom-line">
+                                                    <input id="profile-tel" type="number" name="tel" style="color: #a48021" placeholder="Enter your tel">
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="item-content">
-                                            <div class="item-inner">
-                                                <div class="item-title label">Contact Person</div>
-                                                <div class="item-input">
-                                                    <input id="profile-contactperson" type="text" name="contactperson" value="12312" style = "color: yellow" placeholder="Enter your name">
-                                                </div>
-                                            </div>
-                                        </li>
+                                        
                                     </ul>
                                     <div class="clearfix-10"></div>
                                     <!--button class="button button-big button-fill button-block color-lightgreen" type="submit">Login Now</button-->
@@ -466,6 +468,60 @@
 
 
             </div>
+               
+               <div data-page="company-question" class="page cached">
+                    <!-- Top Navbar-->
+                    <div class="navbar">
+                                        <div class="theme-black navbar-inner" style="background-color: black">
+                                            <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
+                                            <div class="right">
+                                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" width="42" height="42" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                    <!-- Scrollable page content-->
+                    <div class="page-content">
+                        <div class="content-block font-13">
+
+                        <div class="page-title">
+                            <strong>Ask a Question</strong>
+                        </div>
+                          <form>
+                            <div class="list-block form-list-block">
+                              <ul>
+                                <li class="item-content">
+                                  <div class="item-inner">
+                                    <div class="item-title label">Contact Person</div>
+                                    <div class="item-input bottom-line">
+                                      <input style="color: #a48021" type="text" name="name" placeholder="Your Name">
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="item-content">
+                                  <div class="item-inner">
+                                    <div class="item-title label">Email</div>
+                                    <div class="item-input bottom-line">
+                                      <input style="color: #a48021" type="email" name="email" placeholder="Your Email">
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="item-content">
+                                  <div class="item-inner">
+                                    <div class="item-title label">Question</div>
+                                    <div class="item-input">
+                                      <textarea id="question-area" style="color: #a48021; height: 147px; border:2px solid #a48021" rows="4" class="" placeholder="Type Question"></textarea>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                              <div class="clearfix-10"></div>
+                              <!--button class="button button-big button-fill button-block color-lightgreen" type="submit">Login Now</button-->
+                              <a id="send-email-btn" class="button button-big button-fill button-block color-yellow" href="#company-question">Send Now</a>
+                            </div>
+                          </form>
+                        </div>
+                        </div>
+                      </div>
                 
                 <div data-page="company-documents" class="page cached">
                     <!-- Top Navbar-->
@@ -560,7 +616,7 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
-    <script type="text/javascript" src="js/kitchen-sink-1.js"></script>
+    <script type="text/javascript" src="js/kitchen-sink-2.js"></script>
 </body>
 
 </html>

@@ -8,15 +8,16 @@ var myApp = new Framework7({
 // Expose Internal DOM library
 var $$ = Dom7;
 
+$$("input").on("blur", function(e){
+    return;
+})
 
 // get specific dom node
 var profileRelated = {
-    "name": $$('#profile-name'),
     "email": $$('#profile-email'),
-    "address": $$('#profile-address'),
-    "companyname": $$('#profile-companyname'),
     "tel": $$('#profile-tel'),
-    "contactperson": $$('#profile-contactperson')
+    "firstname": $$("profile-firstname"),
+    "lastname": $$("profile-lastname")
 }
 
 var companyRelated = {
@@ -120,15 +121,12 @@ var loginCallBack = function(e){
         console.log(e)
         console.log(profileRelated)
         mainView.router.load({pageName: 'home'});
-        $$('.user-name').text(e.name);
+        $$('.user-name').text(e.companyname);
         $$('.balance-count').text(money(e.balance));
-        profileRelated.name.val(e.name);
         profileRelated.email.val(e.contact);
-        profileRelated.address.val(e.companyaddr);
-        profileRelated.companyname.val(e.companyname);
-        profileRelated.tel.val(e.tel);
-        profileRelated.contactperson.val(e.contactperson);
-//        $$('#profile-contactperson').val(e.contactperson);
+        $$("#profile-firstname").val(e.ContactFirstname);
+        $$("#profile-lastname").val(e.ContactLastname);
+        $$("#profile-tel").val(e.tel);
         
         console.log("debug")
     }else {
@@ -149,17 +147,19 @@ $$('.logowebsite').on('click', function(e){
 
 
 $$('#update-button').on('click', function(e){
-    var profileName = profileRelated.name.val();
-    var profileContact = profileRelated.email.val();
-    var profileAddress = profileRelated.address.val();
-    var profileCname = profileRelated.companyname.val();
-    var profiletel = profileRelated.tel.val();
-    var profilecontactperson = profileRelated.contactperson.val();
-    console.log({id: userinfo.id, profileName:profileName, profileEmail:profileContact, profileAddress:profileAddress});
+    newprofile = {
+        "firstName": $$("#profile-firstname").val(),
+        "lastName": $$("#profile-lastname").val(),
+        "email": $$("#profile-email").val(),
+        "tel": $$("#profile-tel").val(),
+        "id": userinfo.id
+    }
+    console.log(newprofile)
+    
     $$.ajax({
         url: "profileUpdate.php",
         method: 'POST',
-        data: {id: userinfo.id, profileName:profileName, profileEmail:profileContact, profileAddress:profileAddress, profiletel: profiletel, profileContactperson: profilecontactperson, profileCname: profileCname},
+        data: newprofile,
         dataType: 'json',
         success: profileSuccessCallback,
         error: profileErrorCallback,
@@ -171,7 +171,7 @@ $$('#update-button').on('click', function(e){
 var profileSuccessCallback = function(e){
     console.log(e);
     if(e.status == 'success'){
-        $$('.user-name').text(profileRelated.name.val());
+//        $$('.user-name').text(profileRelated.name.val());
     } else{
         alert(e.message);
     }
@@ -257,7 +257,7 @@ var companySuccessCallback = function(e){
     companyRelated.about.attr('href', 'company-about-'+currentCompanyId + '.html');
     companyRelated.useramountshares.text(companyRelated.buypershare.text());
     generateFileList(e.file);
-    $$('#plus-btn').click();
+    $$("#investorunit-input").val(1).trigger('change')
     
 }
 var companyErrorCallback = function(e){
@@ -327,17 +327,18 @@ $$('#investorunit-input').on('change', function(){
             $$(item).text(0);
         });
     }else {
-        var share = parseInt(companyRelated.share.text());
+        console.log($$('#company-share'))
+        var share = parseInt($$('#company-share').text().replace(/,/g,''));
         var amount = parseInt(investorRelated.unitinput.val());
         
         companyRelated.usershares.each(function(idx, item){
-            console.log(idx);
-            console.log(item);
-            $$(item).text(share * amount);
+//            console.log(idx);
+//            console.log(item);
+            $$(item).text(money(share * amount));
         }); 
         
         companyRelated.usertotal.each(function(idx, item){
-            $$(item).text(share * amount * parseInt(companyRelated.buypershare.text()));
+            $$(item).text(money(share * amount * parseInt(companyRelated.buypershare.text())));
         });
         
     }
@@ -346,3 +347,10 @@ $$('#investorunit-input').on('change', function(){
 var money = function(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
+// ask a question send button
+$$('#send-email-btn').on('click', function(e){
+    
+    content = "mailto:jingjingjjw@gmail.com?body=" + escape($$("#question-area").val())
+    window.open(content);
+})
