@@ -254,10 +254,13 @@ var companySuccessCallback = function(e){
     companyRelated.share.text(money(e.shares));
     companyRelated.unit.text(money(e.units));
     companyRelated.name.text(e.name);
-    companyRelated.about.attr('href', 'company-about-'+currentCompanyId + '.html');
+//    companyRelated.about.attr('href', 'company-about-'+currentCompanyId + '.html');
     companyRelated.useramountshares.text(companyRelated.buypershare.text());
     generateFileList(e.file);
+    generateBMList(e.bm);
     $$("#investorunit-input").val(1).trigger('change')
+    
+    $$("#iframe-area-aboutfile").html('<iframe style="width: 100%; height: 100%" src="http://docs.google.com/gview?url='+e.aboutfile+'&embedded=true" frameborder="0"></iframe>')
     
 }
 var companyErrorCallback = function(e){
@@ -283,6 +286,15 @@ function generateFileList(fileList){
     })
 }
 
+function generateBMList(e){
+    var listContent = "";
+    for(var i = 0; i < e.length; i++){
+        temp = '<div style="text-align:center">'+e[i].name+'</div><div><a class="centerimg" style="width:80%; margin-bottom:35px" href="'+e[i].path+'" data-lightbox="image-'+i+'" data-title="'+e[i].name+'"><img src="'+e[i].path+'" alt="" width="100%"></a></div>'
+        listContent += temp;
+    }
+    $$('.bullet-list-image').html(listContent);
+}
+
 
 
 // plus and minus button in company page
@@ -303,11 +315,11 @@ $$('#plus-btn').on('click', function(){
 
 $$('#minus-btn').on('click', function(){
     if(investorRelated.unitinput.val() == ''){
-        return;
+        investorRelated.unitinput.val(1).trigger('change');;
     }else{
         var valBefore = parseInt(investorRelated.unitinput.val());
         if (valBefore <=1){
-            investorRelated.unitinput.val('').trigger('change');
+            investorRelated.unitinput.val(1).trigger('change');
             return;
         } else{
             investorRelated.unitinput.val(valBefore -1).trigger('change');
@@ -351,6 +363,6 @@ var money = function(x) {
 // ask a question send button
 $$('#send-email-btn').on('click', function(e){
     
-    content = "mailto:jingjingjjw@gmail.com?body=" + escape($$("#question-area").val())
+    content = "mailto:jingjingjjw@gmail.com?body=" + escape($$("#question-area").val() + "\n\n\n\n"+$$(".user-name").text() + "\nEdited At " + (new Date()))
     window.open(content);
 })

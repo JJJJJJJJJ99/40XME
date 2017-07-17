@@ -10,6 +10,15 @@
 .jj-0ffwhite {
     color: whitesmoke!important;
 }
+.jj-comapnyname {
+    font-weight: bold!important;
+    font-size: 20px!important;
+}
+
+.centerimg {
+    display: block;
+    margin: 0 auto;
+}
 
 .popup-overlay.modal-overlay-visible {
     visibility: hidden!important;
@@ -45,11 +54,11 @@
     font-weight: bold;
     flex: 1;
     flex-grow: 0;
-    font-size: 16px;
-    border-radius: 10px;
-    height: 20px;
-    width: 20px;
-    flex-basis: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    flex-basis: 30px;
     border: 1px solid #a48021;
     text-align: center;
 }
@@ -58,11 +67,11 @@
     font-weight: bold;
     flex: 1;
     flex-grow: 0;
-    font-size: 16px;
-    border-radius: 10px;
-    height: 20px;
-    width: 20px;
-    flex-basis: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    flex-basis: 30px;
     border: 1px solid #a48021;
     text-align: center;
 }
@@ -72,6 +81,7 @@
     flex-basis: 20px;
     border: 0px;
     text-align: center;
+    font-size: large;
     height: 20px;
     background-color: black;
     color: #a48021;
@@ -91,3 +101,8 @@
 .item-input-field:after, .input-field:after{
     height: 0px!important;
 }
+.bullet-list-image {
+    padding-left: 0px;
+    
+}
+

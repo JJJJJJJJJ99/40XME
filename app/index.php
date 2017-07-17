@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes, minimal-ui">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="css/framework7.material.css">
     <link rel="stylesheet" href="css/framework7.material.colors.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/kitchen-sink.css">
-    <link rel="stylesheet" href="css/jjcss-1.css">
+    <link rel="stylesheet" href="css/kitchen-sink-5.css">
+    <link rel="stylesheet" href="css/jjcss-6.css">
+    
+    <link href="plugin/css/lightbox.min.css" rel="stylesheet">
 </head>
 
 <body class="theme-yellow">
@@ -26,7 +28,7 @@
                 <ul>
                     <li>
                         <a class="item-link close-panel" href="#home">
-                            <div class="item-inner" style="color: whitesmoke">
+                            <div class="item-inner" style="color: #a48021;">
                                 <div class="item-title">Home</div>
                             </div>
                         </a>
@@ -34,20 +36,20 @@
                     <li>
                         <a class="item-link close-panel" href="#profile">
                             <div class="item-inner">
-                                <div class="item-title" style="color: whitesmoke">Settings</div>
+                                <div class="item-title" style="color: #a48021;">Settings</div>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a class="item-link close-panel" href="about-startup-moola.html">
-                            <div class="item-inner" style="color: whitesmoke">
+                            <div class="item-inner" style="color: #a48021;">
                                 <div class="item-title">About 40X.me</div>
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
-            <p> <a href="#index" class="button close-panel" style="color: whitesmoke">Logout</a></p>
+            <p> <a href="#index" class="button close-panel" style="color: #a48021">Logout</a></p>
         </div>
     </div>
     <!-- Views-->
@@ -68,7 +70,7 @@
                                     <div class="clearfix-20"></div>
                                     <div class="text-yellow"></div>
                                     <div class="slide-content-bottom">
-                                       <div class="row">
+                                       <div class="row" style="margin-bottom: 5px">
                                         <a class="button button-big color-yellow" style="width: 70%" href="#signin">Login</a>
                                         <div class="clearfix-10"></div>
                                         
@@ -107,7 +109,7 @@
                         <div class="theme-black navbar-inner" >
                             <div class="left"><a class="link back" href="#" style="color:#a48021"><span class="icon-back"></span><span>Back</span></a></div>
                             <div class="right">
-                                <a href="#index" class="link"><img src="img/logo.png" alt="" height="42" width="42"></a>
+                                <a href="#index" class="link"><img src="img/40xlogo.png" alt="" height="42" width="42"></a>
                             </div>
                         </div>
                     </div>
@@ -174,7 +176,7 @@
                             
                             </div>
                             <div class="right">
-                                <a class="link logowebsite" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
+                                <a class="link logowebsite" href="#"><img src="img/40xlogo.png" alt="" height="42" width="42"></a>
                             </div>
                         </div>
                     </div>
@@ -205,8 +207,8 @@
                             <span>
                                 <a style="margin-top: 10px; width: 100%" id="company-1" class="button button-small button-fill color-yellow" href="#company">
                                     <div class="button-box">
-                                        <div class="button-item">Snap</div>
-                                        <div class="button-item">Oct 30, 17</div>
+                                        <div class="jj-comapnyname">Snap Inc</div>
+                                        <div class="jj-comapnyname">Oct 30, 17</div>
                                     </div>
                                 </a>
                             </span>
@@ -261,7 +263,7 @@
                             
                             </div>
                             <div class="right">
-                                <a class="link logowebsite" href="#"><img src="img/logo.png" alt="" height="42" width="42"></a>
+                                <a class="link logowebsite" href="#"><img src="img/40xlogo.png" alt="" height="42" width="42"></a>
                             </div>
                         </div>
                     </div>
@@ -331,7 +333,7 @@
                             <div class="clearfix-20"></div>
                             <div class="row">
                                 <div class="col-50">
-                                    <a id="company-about" href="company-about-1.html" class="link-box link">
+                                    <a id="company-about" href="#" class="link-box link open-popup" data-popup=".aboutpdf">
                                         <span class="link-box-icon icon-technology"></span> About
                                     </a>
                                 </div>
@@ -349,7 +351,7 @@
                                     </a>
                                 </div>
                                 <div class="col-50">
-                                    <a href="company-key-numbers.html" class="link-box link">
+                                    <a href="#company-business-metrics" class="link-box link">
                                         <span class="link-box-icon icon-key"></span> Business Metrics
                                     </a>
                                 </div>
@@ -377,7 +379,7 @@
                         <div class="theme-black navbar-inner">
                             <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
                             <div class="right">
-                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" alt=""></a>
+                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/40xlogo.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -409,7 +411,7 @@
                         <div class="theme-black navbar-inner" style="background-color: black">
                             <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
                             <div class="right">
-                                <a class="link logowebsite" href="#"><img src="img/logo.png" width="42" height="42" alt=""></a>
+                                <a class="link logowebsite" href="#"><img src="img/40xlogo.png" width="42" height="42" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -418,7 +420,7 @@
                         <div class="content-block font-13">
 
                             <div class="page-title">
-                                <strong>Profile</strong>
+                                <strong>Settings</strong>
                             </div>
                             <form>
                                 <div class="list-block form-list-block">
@@ -475,7 +477,7 @@
                                         <div class="theme-black navbar-inner" style="background-color: black">
                                             <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
                                             <div class="right">
-                                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" width="42" height="42" alt=""></a>
+                                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/40xlogo.png" width="42" height="42" alt=""></a>
                                             </div>
                                         </div>
                                     </div>
@@ -483,45 +485,22 @@
                     <div class="page-content">
                         <div class="content-block font-13">
 
-                        <div class="page-title">
-                            <strong>Ask a Question</strong>
-                        </div>
-                          <form>
+                    
                             <div class="list-block form-list-block">
-                              <ul>
-                                <li class="item-content">
-                                  <div class="item-inner">
-                                    <div class="item-title label">Contact Person</div>
-                                    <div class="item-input bottom-line">
-                                      <input style="color: #a48021" type="text" name="name" placeholder="Your Name">
-                                    </div>
+                                    <div style="width:100%">List here any questions to this company. We will pass them over to the company's management and as we recieve responses, we will promptly share them with you!</div>
+                                    <div>
+                                      <textarea id="question-area" style="color: #a48021; height: 200px; border:2px solid #a48021" rows="4" class="" placeholder="Type Question"></textarea>
                                   </div>
-                                </li>
-                                <li class="item-content">
-                                  <div class="item-inner">
-                                    <div class="item-title label">Email</div>
-                                    <div class="item-input bottom-line">
-                                      <input style="color: #a48021" type="email" name="email" placeholder="Your Email">
-                                    </div>
-                                  </div>
-                                </li>
-                                <li class="item-content">
-                                  <div class="item-inner">
-                                    <div class="item-title label">Question</div>
-                                    <div class="item-input">
-                                      <textarea id="question-area" style="color: #a48021; height: 147px; border:2px solid #a48021" rows="4" class="" placeholder="Type Question"></textarea>
-                                    </div>
-                                  </div>
-                                </li>
-                              </ul>
                               <div class="clearfix-10"></div>
                               <!--button class="button button-big button-fill button-block color-lightgreen" type="submit">Login Now</button-->
                               <a id="send-email-btn" class="button button-big button-fill button-block color-yellow" href="#company-question">Send Now</a>
                             </div>
-                          </form>
+                         
                         </div>
                         </div>
                       </div>
+                
+
                 
                 <div data-page="company-documents" class="page cached">
                     <!-- Top Navbar-->
@@ -531,7 +510,7 @@
                         <div class="theme-black navbar-inner" style="background-color: black">
                             <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
                             <div class="right">
-                                <a class="link open-popup" data-popup=".more-menu" href="#"><img src="img/logo.png" width="42" height="42" alt=""></a>
+                                <a class="link open-popup" data-popup=".more-menu" style="color:#a48021" href="#"><img src="img/40xlogo.png" width="42" height="42" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -544,6 +523,35 @@
                             </div>
                             <hr />
                             <ul class="bullet-list-custom">
+
+                                
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-page="company-business-metrics" class="page cached">
+                    <!-- Top Navbar-->
+                    
+<!--                    todo image icon fix-->
+                    <div class="navbar">
+                        <div class="theme-black navbar-inner" style="background-color: black">
+                            <div class="left"><a class="link back" style="color:#a48021" href="#"><span class="icon-back"></span><span>Back</span></a></div>
+                            <div class="right">
+                                <a class="link open-popup" data-popup=".more-menu" style="color:#a48021" href="#"><img src="img/40xlogo.png" width="42" height="42" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Scrollable page content-->
+                    <div class="page-content">
+                        <div class="content-block font-13">
+
+                            <div class="page-title">
+                                <strong>Business Metrics</strong>
+                            </div>
+                            <hr />
+                            <ul class="bullet-list-image">
 
                                 
                             </ul>
@@ -564,6 +572,24 @@
                         <div class="content-block" style="margin-top: 52px; height: 100%">
                             <a href="#" class="link close-popup icon-close-popup"><span class="icon-cancel"></span></a>
                             <div style="height: 100%" id="iframe-area">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <div class="popup aboutpdf">
+        <div class="view">
+            <div class="pages">
+                <div class="page">
+
+                    <div class="page-content" style="height: 100%">
+                        <div class="content-block" style="margin-top: 52px; height: 100%">
+                            <a href="#" class="link close-popup icon-close-popup"><span class="icon-cancel"></span></a>
+                            <div style="height: 100%" id="iframe-area-aboutfile">
                                 
                             </div>
                         </div>
@@ -616,7 +642,14 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
-    <script type="text/javascript" src="js/kitchen-sink-2.js"></script>
+    <script type="text/javascript" src="js/kitchen-sink-6.js"></script>
+    <script src="plugin/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+    </script>
 </body>
 
 </html>

@@ -460,7 +460,7 @@ html:not(.watch-active-state) .item-link-list .item-link:active,
 .bullet { display:inline-block; width:18px; height:18px; margin-right:5px; background:#a48021; font-size:12px; line-height:20px; text-align:center; color:#fff; border-radius:50%; }
 .bullet-list-custom { display:block; margin:0px; padding:0px !important; list-style:none; }
 .bullet-list-custom li { display:block; margin:0px; border-bottom:1px solid rgba(0, 0, 0, 0.12); padding:8px 0px 8px 26px; position:relative; overflow:hidden; }
-.bullet-list-custom li a { display:block; color:#545662; }
+.bullet-list-custom li a { display:block; color:#a48021; }
 .bullet-list-custom .custom-icon, .bullet-list-custom a .custom-icon { position:absolute; left:0; top:10px; font-size:16px; color:#a48021; }
 .panel-left, .panel-right { background: ##808080; color:##808080; }
 .panel-left .list-block, .panel-right .list-block { margin: 16px 0; }
