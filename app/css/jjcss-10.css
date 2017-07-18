@@ -16,7 +16,6 @@
 }
 
 .centerimg {
-    display: block;
     margin: 0 auto;
 }
 
@@ -54,7 +53,7 @@
     font-weight: bold;
     flex: 1;
     flex-grow: 0;
-    font-size: 20px;
+    font-size: 22px;
     border-radius: 15px;
     height: 30px;
     width: 30px;
@@ -67,7 +66,7 @@
     font-weight: bold;
     flex: 1;
     flex-grow: 0;
-    font-size: 20px;
+    font-size: 21px;
     border-radius: 15px;
     height: 30px;
     width: 30px;
@@ -78,11 +77,12 @@
 #investorunit-input {
     flex: 1;
     flex-grow: 0;
-    flex-basis: 20px;
+    flex-basis: 25px;
     border: 0px;
     text-align: center;
     font-size: large;
-    height: 20px;
+    font-weight: bolder;
+    height: 25px;
     background-color: black;
     color: #a48021;
 }

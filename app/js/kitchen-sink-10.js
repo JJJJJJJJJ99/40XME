@@ -135,8 +135,8 @@ var loginCallBack = function(e){
     }
 }
 
-$$('#homewebsite').on('click', function(e){
-    window.location.href = "http://40x.me/"
+$$('.homewebsite').on('click', function(e){
+    window.location.href = "http://40x.me/#contact"
 })
 $$('.logowebsite').on('click', function(e){
     console.log("clicked")
@@ -255,7 +255,7 @@ var companySuccessCallback = function(e){
     companyRelated.unit.text(money(e.units));
     companyRelated.name.text(e.name);
 //    companyRelated.about.attr('href', 'company-about-'+currentCompanyId + '.html');
-    companyRelated.useramountshares.text(companyRelated.buypershare.text());
+    companyRelated.useramountshares.text(companyRelated.buypershare.text()+".00");
     generateFileList(e.file);
     generateBMList(e.bm);
     $$("#investorunit-input").val(1).trigger('change')
@@ -289,7 +289,7 @@ function generateFileList(fileList){
 function generateBMList(e){
     var listContent = "";
     for(var i = 0; i < e.length; i++){
-        temp = '<div style="text-align:center">'+e[i].name+'</div><div><a class="centerimg" style="width:80%; margin-bottom:35px" href="'+e[i].path+'" data-lightbox="image-'+i+'" data-title="'+e[i].name+'"><img src="'+e[i].path+'" alt="" width="100%"></a></div>'
+        temp = '<div style="text-align:left">'+e[i].name+'</div><div><a class="centerimg" style="width:40%; margin-bottom:35px" href="'+e[i].path+'" data-lightbox="image-'+i+'" data-title="'+e[i].name+'"><img src="'+e[i].path+'" alt="" width="20%"></a></div>'
         listContent += temp;
     }
     $$('.bullet-list-image').html(listContent);
@@ -359,6 +359,7 @@ $$('#investorunit-input').on('change', function(){
 var money = function(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
 
 // ask a question send button
 $$('#send-email-btn').on('click', function(e){

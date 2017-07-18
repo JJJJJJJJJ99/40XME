@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/framework7.material.colors.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/kitchen-sink-5.css">
-    <link rel="stylesheet" href="css/jjcss-6.css">
+    <link rel="stylesheet" href="css/jjcss-10.css">
     
     <link href="plugin/css/lightbox.min.css" rel="stylesheet">
 </head>
@@ -64,7 +64,7 @@
                     <div data-pagination=".swiper-pagination" data-paginationHide="true" class="swiper-container swiper-init ks-demo-slider">
                         <div class="swiper-pagination"></div>
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide slide01">
+                            <div class="slide01">
                                 <div class="slide-content">
                                     <img src="img/40xlogo.png" alt="">
                                     <div class="clearfix-20"></div>
@@ -78,7 +78,7 @@
                 
                                          <div class="row">
                                         
-                                         <a id="homewebsite" class="button button-big color-yellow" style="width: 70%" href="test.html">Become A Member</a>
+                                         <a class="button button-big color-yellow homewebsite" style="width: 70%" href="#">Become A Member</a>
                                          
                                          </div>
                                          
@@ -94,7 +94,7 @@
                                     <div class="slide-content-bottom">
                                         <a class="button button-block color-yellow" href="#signin">Login</a>
                                         <div class="clearfix-10"></div>
-                                        <a class="button button-block color-yellow" href="test.html">Become A Member</a>
+                                        <a class="button button-block color-yellow homewebsite" href="#">Become A Member</a>
                                         <div class="clearfix-10"></div>
                                     </div>
                                 </div>
@@ -282,14 +282,12 @@
                             </div>
                         </div>
                         <div class="content-block">
-                            <center>
+                           
                                 <span class="text-yellow">
                                 Offer:&nbsp;<span id="company-unit">(units)</span> Units @ <span id="company-share">(shares)</span>
+                                Shares @ $US&nbsp;<span id="company-amount-shares">(amount/shares)</span><span>.00/share</span>
                                 </span>
-                                <span class="text-yellow">
-                                Shares @ $US&nbsp;<span id="company-amount-shares">(amount/shares)</span> <span>/share</span>
-                                </span>
-                            </center>
+                            
                         </div>
                         <div class="clearfix-10">
                             <div class="row">
@@ -616,7 +614,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-100" style="padding-left: 32px">
+                                <div class="col-100" style="padding-left: 32px; margin-bottom:30px">
                                     <span class="user-shares" class="text-yellow">
                                         0 </span>shares &nbsp;/&nbsp;$US<span class="user-amount-shares">(amount/shares)</span> <span>&nbsp;=&nbsp;</span> <span class="user-total">0</span>
 
@@ -642,7 +640,7 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
-    <script type="text/javascript" src="js/kitchen-sink-6.js"></script>
+    <script type="text/javascript" src="js/kitchen-sink-10.js"></script>
     <script src="plugin/js/lightbox-plus-jquery.min.js"></script>
     <script>
         lightbox.option({
